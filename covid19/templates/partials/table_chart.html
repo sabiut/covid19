@@ -1,10 +1,18 @@
+{%load plotly_dash%}
 <div class="post-preview">
-          <a href="post.html">
+
             <h2 class="post-title">
               I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
             </h2>
-          </a>
+            <div class="{% plotly_class name='table_chart'%} card" style="height:100%; width:100%">
+
+                {% plotly_app name="table_chart" ratio=2 %}
+            </div>
+
+
           <p class="post-meta">Posted by
             <a href="#">Start Bootstrap</a>
             on September 18, 2019</p>
         </div>
+
+

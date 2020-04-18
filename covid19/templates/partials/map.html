@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<div class="post-preview">
 
-</body>
-</html>
+            <h2 class="post-title">
+              New Covid 19 Cases
+            </h2>
+
+                {{ new_cases | safe}}
+
+          <p class="post-meta"> Automatically
+            <a href="#">Updated Daily</a>
+            on {{date}}
+        </div>
