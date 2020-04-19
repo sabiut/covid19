@@ -6,10 +6,9 @@ import dash_table
 import pandas as pd
 from django_plotly_dash import DjangoDash
 
-
 app = DjangoDash('table_chart')
 
-df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv')
+df = pd.read_csv('corona.csv')
 
 PAGE_SIZE = 5
 
@@ -110,8 +109,8 @@ def update_table(page_current, page_size, sort_by, filter):
         )
 
     return dff.iloc[
-        page_current*page_size: (page_current + 1)*page_size
-    ].to_dict('records')
+           page_current * page_size: (page_current + 1) * page_size
+           ].to_dict('records')
 
 
 @app.callback(
@@ -126,20 +125,22 @@ def update_graph(rows):
                 figure={
                     "data": [
                         {
-                            "x": dff["country"],
+                            "x": dff["Country"],
                             "y": dff[column] if column in dff else [],
                             "type": "bar",
-                            "marker": {"color": "#0074D9"},
+                            "marker": {"color": 'green'},
                         }
                     ],
                     "layout": {
                         "xaxis": {"automargin": True},
-                        "yaxis": {"automargin": True},
+                        "yaxis": {'automargin': True},
+                        'title': {'text': column},
                         "height": 250,
-                        "margin": {"t": 10, "l": 10, "r": 10},
+
+                        "margin": {"t": 30, "l": 10, "r": 10},
                     },
                 },
             )
-            for column in ["pop", "lifeExp", "gdpPercap"]
+            for column in ["TotalCases", "NewCases", "TotalRecovered"]
         ]
     )
