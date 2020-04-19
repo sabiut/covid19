@@ -5,9 +5,10 @@ import pandas as pd
 import plotly.offline as pyo
 import datetime
 
+df = pd.read_csv('corona.csv', skiprows=[1, 2, 3, 4, 5, 6, 7, 8, 221])
+
 
 def home(request):
-    df = pd.read_csv('corona.csv', skiprows=[1, 2, 3, 4, 5, 6, 7, 8, 221])
     labels = df['Country']
     values = df['TotalCases']
     data = [go.Pie(labels=labels,
@@ -19,22 +20,28 @@ def home(request):
     date = datetime.datetime.today().strftime('%d-%b-%Y')
 
     # Funnel chart
-    fig1 = px.funnel_area(names=df['Country'],
-                          values=df['NewCases'],
-                          )
-
-    new_cases = pyo.plot(fig1, auto_open=False, output_type='div')
+    new_cases = funnel()
+    co_map = maps()
     return render(request, 'home/welcome.html', locals())
 
 
-def funnel(request):
-    import plotly.express as px
-    import pandas as pd
-    stages = ["Website visit", "Downloads", "Potential customers", "Requested price", "invoice sent"]
-    df_mtl = pd.DataFrame(dict(number=[39, 27.4, 20.6, 11, 3], stage=stages))
-    df_mtl['office'] = 'Montreal'
-    df_toronto = pd.DataFrame(dict(number=[52, 36, 18, 14, 5], stage=stages))
-    df_toronto['office'] = 'Toronto'
-    df = pd.concat([df_mtl, df_toronto], axis=0)
-    plot = px.funnel(df, x='number', y='stage', color='office')
-    return render(request, 'home/funnel.html', locals())
+def maps():
+    fig = px.scatter_geo(df, locations="iso_alpha",
+                         projection="natural earth",
+                         color="TotalCases",
+                         hover_name="Country",
+                         text='TotalRecovered',
+                         labels='TotalCases',
+                         size="TotalDeaths",
+                         color_continuous_scale=px.colors.diverging.Portland,
+                         height=500)
+    co_map = pyo.plot(fig, auto_open=False, output_type='div')
+    return co_map
+
+
+def funnel():
+    fig1 = px.funnel_area(names=df['Country'],
+                          values=df['NewCases'],
+                          )
+    new_cases = pyo.plot(fig1, auto_open=False, output_type='div')
+    return new_cases
