@@ -61,7 +61,7 @@ def cases_per_month():
     fig.add_trace(go.Scatter(x=month, y=confirm_cases, name='Confirm cases',
                              line=dict(color='firebrick', width=4, dash='dot')))
     fig.add_trace(go.Scatter(x=month, y=recover, name='Recovered cases',
-                             line=dict(color='green', width=4, dash='dot')))
+                             line=dict(color='green', width=4, dash="dot")))
     fig.add_trace(go.Scatter(x=month, y=deaths, name='Deaths ',
                              line=dict(color='red', width=4, dash='dot')))
 
@@ -72,3 +72,21 @@ def cases_per_month():
 
     month_cases = pyo.plot(fig, auto_open=False, output_type='div')
     return month_cases
+
+
+def show_table(request):
+    layout = go.Layout(title='Covid-19 Cases per Day',
+                       )
+    fig = go.Figure(layout=layout, data=[go.Table(
+        header=dict(values=list(df.columns),
+                    fill_color='paleturquoise',
+                    align='left'),
+        cells=dict(values=[df.Country, df.TotalCases, df.NewCases, df.TotalDeaths, df.NewDeaths,
+                           df.TotalRecovered, df.ActiveCases, df.Critical, df.TotalTests,
+                           df.iso_alpha, df.date],
+                   fill_color='lavender',
+                   align='left'))
+    ])
+
+    shows_table = pyo.plot(fig, auto_open=False, output_type='div')
+    return render(request, 'home/table.html', locals())

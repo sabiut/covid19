@@ -22,6 +22,8 @@
   <!-- Custom styles for this template -->
   <link href="{%static 'css/clean-blog.min.css'%}" rel="stylesheet">
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+
 </head>
 
 <body>
@@ -74,7 +76,10 @@
     <!-- Control the column width, and how they should appear on different devices -->
     <div class="row">
       <div class="col-sm-4" ></div>
-      <div class="col-sm-4" > <i class="fas fa-file-excel"> Download</i> | <i class="fas fa-file-csv"> Download</i> | <i class="fas fa-link"> Table</i></div>
+      <div class="col-sm-4" > <i class="fas fa-file-excel"> Excel File</i> | <i class="fas fa-file-csv"> CSV File</i> | <a href="{% url 'show_table'%}"><i class="fas fa-link">
+         Table</a></i>
+      </div>
+
       <div class="col-sm-4"><i class=""></i> </div>
     </div>
     <br>
@@ -113,19 +118,17 @@
         <!--end map -->
 
         <hr>
-        <!-- Pager -->
-        <div class="clearfix">
-          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <hr>
 
+         <!-- Footer -->
+{% include 'partials/copy.html'%}
+<!--end footer-->
+<hr>
   <!-- Footer -->
 {% include 'partials/footer.html'%}
 <!--end footer-->
+
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="{%static 'vendor/jquery/jquery.min.js'%}"></script>

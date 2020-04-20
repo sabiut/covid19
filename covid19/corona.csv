@@ -1,238 +1,236 @@
-Country,TotalCases,NewCases,TotalDeaths,NewDeaths,TotalRecovered,ActiveCases,Critical,Tot Cases/1M pop,Deaths/1M pop,TotalTests,"Tests/
-1M pop
-",Continent,iso_alpha,text,date
+Country,TotalCases,NewCases,TotalDeaths,NewDeaths,TotalRecovered,ActiveCases,Critical,TotalTests,iso_alpha,date
 "
 North America
-",792285,879.0,41647.0,110.0,83378.0,667260,14660.0,0.0,0.0,0.0,0.0,0.0,North America,North America<br>Active Cases 667260<br>Total Deaths 41647,20-Apr-2020
+",792285,879.0,41647.0,110.0,83378.0,667260,14660.0,0.0,North America,20-Apr-2020
 "
 Europe
-",1073214,13178.0,100191.0,913.0,305663.0,667360,26321.0,0.0,0.0,0.0,0.0,0.0,Europe,Europe<br>Active Cases 667360<br>Total Deaths 100191,20-Apr-2020
+",1073214,13178.0,100191.0,913.0,305663.0,667360,26321.0,0.0,Europe,20-Apr-2020
 "
 Asia
-",375586,4802.0,14587.0,186.0,178115.0,182884,6358.0,0.0,0.0,0.0,0.0,0.0,Asia,Asia<br>Active Cases 182884<br>Total Deaths 14587,20-Apr-2020
+",375586,4802.0,14587.0,186.0,178115.0,182884,6358.0,0.0,Asia,20-Apr-2020
 "
 South America
-",78207,234.0,3665.0,12.0,27698.0,46844,7532.0,0.0,0.0,0.0,0.0,0.0,South America,South America<br>Active Cases 46844<br>Total Deaths 3665,20-Apr-2020
+",78207,234.0,3665.0,12.0,27698.0,46844,7532.0,0.0,South America,20-Apr-2020
 "
 Oceania
-",8134,29.0,82.0,1.0,5159.0,2893,68.0,0.0,0.0,0.0,0.0,0.0,Oceania,Oceania<br>Active Cases 2893<br>Total Deaths 82,20-Apr-2020
+",8134,29.0,82.0,1.0,5159.0,2893,68.0,0.0,Oceania,20-Apr-2020
 "
 Africa
-",21915,174.0,1083.0,1.0,5482.0,15350,195.0,0.0,0.0,0.0,0.0,0.0,Africa,Africa<br>Active Cases 15350<br>Total Deaths 1083,20-Apr-2020
+",21915,174.0,1083.0,1.0,5482.0,15350,195.0,0.0,Africa,20-Apr-2020
 "
 
-",721,0.0,15.0,0.0,644.0,62,7.0,0.0,0.0,0.0,0.0,0.0,,<br>Active Cases 62<br>Total Deaths 15,20-Apr-2020
-World,2350062,19296.0,161270.0,1223.0,606139.0,1582653,55141.0,301.0,20.7,0.0,0.0,0.0,World,World<br>Active Cases 1582653<br>Total Deaths 161270,20-Apr-2020
-USA,738923,131.0,39015.0,1.0,68285.0,631623,13551.0,2232.0,118.0,3722209.0,11245.0,0.0,USA,USA<br>Active Cases 631623<br>Total Deaths 39015,20-Apr-2020
-Spain,195944,1528.0,20453.0,410.0,77357.0,98134,7371.0,4191.0,437.0,930230.0,19896.0,0.0,ESP,Spain<br>Active Cases 98134<br>Total Deaths 20453,20-Apr-2020
-Italy,175925,0.0,23227.0,0.0,44927.0,107771,2733.0,2910.0,384.0,1305833.0,21598.0,0.0,ITA,Italy<br>Active Cases 107771<br>Total Deaths 23227,20-Apr-2020
-France,151793,0.0,19323.0,0.0,35983.0,96487,5833.0,2325.0,296.0,463662.0,7103.0,0.0,FRA,France<br>Active Cases 96487<br>Total Deaths 19323,20-Apr-2020
-Germany,143779,55.0,4543.0,5.0,88000.0,51236,2922.0,1716.0,54.0,1728357.0,20629.0,0.0,DEU,Germany<br>Active Cases 51236<br>Total Deaths 4543,20-Apr-2020
-UK,114217,0.0,15464.0,0.0,0.0,98409,1559.0,1682.0,228.0,460437.0,6783.0,0.0,GBR,UK<br>Active Cases 98409<br>Total Deaths 15464,20-Apr-2020
-Turkey,82329,0.0,1890.0,0.0,10453.0,69986,1894.0,976.0,22.0,598933.0,7101.0,0.0,TUR,Turkey<br>Active Cases 69986<br>Total Deaths 1890,20-Apr-2020
-Iran,82211,1343.0,5118.0,87.0,57023.0,20070,3456.0,979.0,61.0,341662.0,4068.0,0.0,IRN,Iran<br>Active Cases 20070<br>Total Deaths 5118,20-Apr-2020
-Russia,42853,6060.0,361.0,48.0,3291.0,39201,8.0,294.0,2.0,1940000.0,13294.0,0.0,RUS,Russia<br>Active Cases 39201<br>Total Deaths 361,20-Apr-2020
-Belgium,38496,1313.0,5683.0,230.0,8757.0,24056,1081.0,3322.0,490.0,153778.0,13269.0,0.0,BEL,Belgium<br>Active Cases 24056<br>Total Deaths 5683,20-Apr-2020
-Brazil,36925,203.0,2372.0,11.0,14026.0,20527,6634.0,174.0,11.0,62985.0,296.0,0.0,BRA,Brazil<br>Active Cases 20527<br>Total Deaths 2372,20-Apr-2020
-Canada,33383,0.0,1470.0,0.0,11207.0,20706,557.0,885.0,39.0,516216.0,13677.0,0.0,CAN,Canada<br>Active Cases 20706<br>Total Deaths 1470,20-Apr-2020
-Netherlands,32655,1066.0,3684.0,83.0,250.0,28721,1279.0,1906.0,215.0,154911.0,9041.0,0.0,NLD,Netherlands<br>Active Cases 28721<br>Total Deaths 3684,20-Apr-2020
-Switzerland,27740,336.0,1368.0,0.0,17100.0,9272,386.0,3205.0,158.0,221263.0,25566.0,0.0,CHE,Switzerland<br>Active Cases 9272<br>Total Deaths 1368,20-Apr-2020
-Portugal,20206,521.0,714.0,27.0,610.0,18882,224.0,1982.0,70.0,235878.0,23133.0,0.0,PRT,Portugal<br>Active Cases 18882<br>Total Deaths 714,20-Apr-2020
-India,16365,0.0,521.0,0.0,2466.0,13378,0.0,12.0,0.4,372123.0,270.0,0.0,IND,India<br>Active Cases 13378<br>Total Deaths 521,20-Apr-2020
-Ireland,14758,0.0,571.0,0.0,77.0,14110,294.0,2989.0,116.0,90646.0,18358.0,0.0,IRL,Ireland<br>Active Cases 14110<br>Total Deaths 571,20-Apr-2020
-Austria,14689,18.0,443.0,0.0,10501.0,3745,204.0,1631.0,49.0,179243.0,19902.0,0.0,AUT,Austria<br>Active Cases 3745<br>Total Deaths 443,20-Apr-2020
-Peru,14420,0.0,348.0,0.0,6684.0,7388,117.0,437.0,11.0,135895.0,4122.0,0.0,PER,Peru<br>Active Cases 7388<br>Total Deaths 348,20-Apr-2020
-Sweden,14385,563.0,1540.0,29.0,550.0,12295,1054.0,1424.0,152.0,74600.0,7387.0,0.0,SWE,Sweden<br>Active Cases 12295<br>Total Deaths 1540,20-Apr-2020
-Israel,13362,97.0,171.0,7.0,3564.0,9627,156.0,1544.0,20.0,187250.0,21634.0,0.0,ISR,Israel<br>Active Cases 9627<br>Total Deaths 171,20-Apr-2020
-S. Korea,10661,8.0,234.0,2.0,8042.0,2385,55.0,208.0,5.0,559109.0,10905.0,0.0,KOR,S. Korea<br>Active Cases 2385<br>Total Deaths 234,20-Apr-2020
-Japan,10296,0.0,222.0,0.0,1069.0,9005,221.0,81.0,2.0,111325.0,880.0,0.0,JPN,Japan<br>Active Cases 9005<br>Total Deaths 222,20-Apr-2020
-Chile,9730,0.0,126.0,0.0,4035.0,5569,360.0,509.0,7.0,108891.0,5696.0,0.0,CHL,Chile<br>Active Cases 5569<br>Total Deaths 126,20-Apr-2020
-Poland,9082,340.0,350.0,3.0,1040.0,7692,160.0,240.0,9.0,204246.0,5397.0,0.0,POL,Poland<br>Active Cases 7692<br>Total Deaths 350,20-Apr-2020
-Ecuador,9022,0.0,456.0,0.0,1008.0,7558,168.0,511.0,26.0,30922.0,1753.0,0.0,ECU,Ecuador<br>Active Cases 7558<br>Total Deaths 456,20-Apr-2020
-Romania,8746,328.0,434.0,13.0,1892.0,6420,256.0,455.0,23.0,93611.0,4866.0,0.0,ROU,Romania<br>Active Cases 6420<br>Total Deaths 434,20-Apr-2020
-Saudi Arabia,8274,0.0,92.0,0.0,1329.0,6853,78.0,238.0,3.0,150000.0,4309.0,0.0,SAU,Saudi Arabia<br>Active Cases 6853<br>Total Deaths 92,20-Apr-2020
-Pakistan,7993,355.0,159.0,16.0,1868.0,5966,46.0,36.0,0.7,98522.0,446.0,0.0,PAK,Pakistan<br>Active Cases 5966<br>Total Deaths 159,20-Apr-2020
-Mexico,7497,622.0,650.0,104.0,2627.0,4220,207.0,58.0,5.0,49167.0,381.0,0.0,MEX,Mexico<br>Active Cases 4220<br>Total Deaths 650,20-Apr-2020
-Denmark,7384,142.0,355.0,9.0,4141.0,2888,76.0,1275.0,61.0,94277.0,16277.0,0.0,DNK,Denmark<br>Active Cases 2888<br>Total Deaths 355,20-Apr-2020
-Norway,7069,33.0,165.0,1.0,32.0,6872,58.0,1304.0,30.0,139668.0,25763.0,0.0,NOR,Norway<br>Active Cases 6872<br>Total Deaths 165,20-Apr-2020
-UAE,6781,479.0,41.0,4.0,1286.0,5454,1.0,686.0,4.0,767000.0,77550.0,0.0,ARE,UAE<br>Active Cases 5454<br>Total Deaths 41,20-Apr-2020
-Czechia,6657,51.0,181.0,0.0,1235.0,5241,84.0,622.0,17.0,168096.0,15697.0,0.0,CZE,Czechia<br>Active Cases 5241<br>Total Deaths 181,20-Apr-2020
-Australia,6606,20.0,70.0,0.0,4230.0,2306,48.0,259.0,3.0,420996.0,16510.0,0.0,AUS,Australia<br>Active Cases 2306<br>Total Deaths 70,20-Apr-2020
-Singapore,6588,596.0,11.0,0.0,740.0,5837,23.0,1126.0,2.0,94796.0,16203.0,0.0,SGP,Singapore<br>Active Cases 5837<br>Total Deaths 11,20-Apr-2020
-Indonesia,6575,327.0,582.0,47.0,686.0,5307,0.0,24.0,2.0,42219.0,154.0,0.0,IDN,Indonesia<br>Active Cases 5307<br>Total Deaths 582,20-Apr-2020
-Philippines,6259,172.0,409.0,12.0,572.0,5278,1.0,57.0,4.0,59928.0,547.0,0.0,PHL,Philippines<br>Active Cases 5278<br>Total Deaths 409,20-Apr-2020
-Serbia,5994,0.0,117.0,0.0,637.0,5240,126.0,686.0,13.0,36028.0,4123.0,0.0,SRB,Serbia<br>Active Cases 5240<br>Total Deaths 117,20-Apr-2020
-Ukraine,5449,343.0,141.0,8.0,347.0,4961,45.0,125.0,3.0,57111.0,1306.0,0.0,UKR,Ukraine<br>Active Cases 4961<br>Total Deaths 141,20-Apr-2020
-Qatar,5448,440.0,8.0,0.0,518.0,4922,37.0,1891.0,3.0,62538.0,21707.0,0.0,QAT,Qatar<br>Active Cases 4922<br>Total Deaths 8,20-Apr-2020
-Malaysia,5389,84.0,89.0,1.0,3197.0,2103,46.0,167.0,3.0,103892.0,3210.0,0.0,MYS,Malaysia<br>Active Cases 2103<br>Total Deaths 89,20-Apr-2020
-Belarus,4779,0.0,45.0,0.0,342.0,4392,65.0,506.0,5.0,86813.0,9187.0,0.0,BLR,Belarus<br>Active Cases 4392<br>Total Deaths 45,20-Apr-2020
-Dominican Republic,4335,0.0,217.0,0.0,312.0,3806,146.0,400.0,20.0,14373.0,1325.0,0.0,DOM,Dominican Republic<br>Active Cases 3806<br>Total Deaths 217,20-Apr-2020
-Panama,4273,63.0,120.0,4.0,140.0,4013,96.0,990.0,28.0,19091.0,4425.0,0.0,PAN,Panama<br>Active Cases 4013<br>Total Deaths 120,20-Apr-2020
-Finland,3783,102.0,94.0,4.0,1700.0,1989,68.0,683.0,17.0,57300.0,10342.0,0.0,FIN,Finland<br>Active Cases 1989<br>Total Deaths 94,20-Apr-2020
-Colombia,3621,0.0,166.0,0.0,691.0,2764,98.0,71.0,3.0,59002.0,1160.0,0.0,COL,Colombia<br>Active Cases 2764<br>Total Deaths 166,20-Apr-2020
-Luxembourg,3537,0.0,72.0,0.0,601.0,2864,32.0,5650.0,115.0,33252.0,53120.0,0.0,LUX,Luxembourg<br>Active Cases 2864<br>Total Deaths 72,20-Apr-2020
-South Africa,3034,0.0,52.0,0.0,903.0,2079,36.0,51.0,0.9,108021.0,1821.0,0.0,ZAF,South Africa<br>Active Cases 2079<br>Total Deaths 52,20-Apr-2020
-Egypt,3032,0.0,224.0,0.0,701.0,2107,0.0,30.0,2.0,55000.0,537.0,0.0,EGY,Egypt<br>Active Cases 2107<br>Total Deaths 224,20-Apr-2020
-Argentina,2839,0.0,132.0,0.0,685.0,2022,127.0,63.0,3.0,30942.0,685.0,0.0,ARG,Argentina<br>Active Cases 2022<br>Total Deaths 132,20-Apr-2020
-Morocco,2820,135.0,138.0,1.0,322.0,2360,1.0,76.0,4.0,14189.0,384.0,0.0,MAR,Morocco<br>Active Cases 2360<br>Total Deaths 138,20-Apr-2020
-Thailand,2765,32.0,47.0,0.0,1928.0,790,61.0,40.0,0.7,100498.0,1440.0,0.0,THA,Thailand<br>Active Cases 790<br>Total Deaths 47,20-Apr-2020
-Algeria,2534,0.0,367.0,0.0,894.0,1273,60.0,58.0,8.0,6500.0,148.0,0.0,DZA,Algeria<br>Active Cases 1273<br>Total Deaths 367,20-Apr-2020
-Bangladesh,2456,312.0,91.0,7.0,75.0,2290,1.0,15.0,0.6,23941.0,145.0,0.0,BGD,Bangladesh<br>Active Cases 2290<br>Total Deaths 91,20-Apr-2020
-Moldova,2351,0.0,62.0,5.0,457.0,1832,80.0,583.0,15.0,9848.0,2441.0,0.0,MDA,Moldova<br>Active Cases 1832<br>Total Deaths 62,20-Apr-2020
-Greece,2235,0.0,110.0,0.0,269.0,1856,67.0,214.0,11.0,53290.0,5113.0,0.0,GRC,Greece<br>Active Cases 1856<br>Total Deaths 110,20-Apr-2020
-Hungary,1916,82.0,189.0,17.0,250.0,1477,61.0,198.0,20.0,46353.0,4798.0,0.0,HUN,Hungary<br>Active Cases 1477<br>Total Deaths 189,20-Apr-2020
-Kuwait,1915,164.0,7.0,1.0,305.0,1603,38.0,448.0,2.0,0.0,0.0,0.0,KWT,Kuwait<br>Active Cases 1603<br>Total Deaths 7,20-Apr-2020
-Croatia,1871,39.0,47.0,8.0,709.0,1115,23.0,456.0,11.0,24186.0,5891.0,0.0,HRV,Croatia<br>Active Cases 1115<br>Total Deaths 47,20-Apr-2020
-Bahrain,1773,0.0,7.0,0.0,755.0,1011,3.0,1042.0,4.0,82568.0,48524.0,0.0,BHR,Bahrain<br>Active Cases 1011<br>Total Deaths 7,20-Apr-2020
-Iceland,1760,0.0,9.0,0.0,1291.0,460,3.0,5158.0,26.0,41091.0,120416.0,0.0,ISL,Iceland<br>Active Cases 460<br>Total Deaths 9,20-Apr-2020
-Kazakhstan,1676,61.0,17.0,0.0,400.0,1259,22.0,89.0,0.9,100878.0,5373.0,0.0,KAZ,Kazakhstan<br>Active Cases 1259<br>Total Deaths 17,20-Apr-2020
-Estonia,1528,16.0,40.0,2.0,164.0,1324,10.0,1152.0,30.0,40333.0,30405.0,0.0,EST,Estonia<br>Active Cases 1324<br>Total Deaths 40,20-Apr-2020
-Iraq,1513,0.0,82.0,0.0,953.0,478,0.0,38.0,2.0,53955.0,1341.0,0.0,IRQ,Iraq<br>Active Cases 478<br>Total Deaths 82,20-Apr-2020
-Uzbekistan,1495,5.0,5.0,0.0,225.0,1265,8.0,45.0,0.1,136000.0,4063.0,0.0,UZB,Uzbekistan<br>Active Cases 1265<br>Total Deaths 5,20-Apr-2020
-New Zealand,1431,9.0,12.0,1.0,912.0,507,18.0,297.0,2.0,83224.0,17258.0,0.0,NZL,New Zealand<br>Active Cases 507<br>Total Deaths 12,20-Apr-2020
-Azerbaijan,1373,0.0,18.0,0.0,590.0,765,21.0,135.0,2.0,86607.0,8542.0,0.0,AZE,Azerbaijan<br>Active Cases 765<br>Total Deaths 18,20-Apr-2020
-Slovenia,1330,13.0,74.0,4.0,192.0,1064,26.0,640.0,36.0,41265.0,19849.0,0.0,SVN,Slovenia<br>Active Cases 1064<br>Total Deaths 74,20-Apr-2020
-Lithuania,1298,59.0,35.0,2.0,242.0,1021,14.0,477.0,13.0,64035.0,23522.0,0.0,LTU,Lithuania<br>Active Cases 1021<br>Total Deaths 35,20-Apr-2020
-Armenia,1291,43.0,20.0,0.0,545.0,726,30.0,436.0,7.0,12680.0,4279.0,0.0,ARM,Armenia<br>Active Cases 726<br>Total Deaths 20,20-Apr-2020
-Bosnia and Herzegovina,1285,17.0,48.0,1.0,347.0,890,4.0,392.0,15.0,17818.0,5431.0,0.0,BIH,Bosnia and Herzegovina<br>Active Cases 890<br>Total Deaths 48,20-Apr-2020
-Oman,1266,86.0,6.0,0.0,233.0,1027,3.0,248.0,1.0,0.0,0.0,0.0,OMN,Oman<br>Active Cases 1027<br>Total Deaths 6,20-Apr-2020
-North Macedonia,1207,37.0,51.0,2.0,179.0,977,15.0,579.0,24.0,11870.0,5697.0,0.0,MKD,North Macedonia<br>Active Cases 977<br>Total Deaths 51,20-Apr-2020
-Slovakia,1161,72.0,12.0,1.0,229.0,920,10.0,213.0,2.0,44276.0,8110.0,0.0,SVK,Slovakia<br>Active Cases 920<br>Total Deaths 12,20-Apr-2020
-Hong Kong,1026,2.0,4.0,0.0,602.0,420,8.0,137.0,0.5,131786.0,17579.0,0.0,HKG,Hong Kong<br>Active Cases 420<br>Total Deaths 4,20-Apr-2020
-Cameroon,1017,0.0,42.0,0.0,305.0,670,33.0,38.0,2.0,0.0,0.0,0.0,CMR,Cameroon<br>Active Cases 670<br>Total Deaths 42,20-Apr-2020
-Afghanistan,993,60.0,32.0,2.0,131.0,830,0.0,26.0,0.8,0.0,0.0,0.0,AFG,Afghanistan<br>Active Cases 830<br>Total Deaths 32,20-Apr-2020
-Cuba,986,0.0,32.0,0.0,227.0,727,15.0,87.0,3.0,25309.0,2234.0,0.0,CUB,Cuba<br>Active Cases 727<br>Total Deaths 32,20-Apr-2020
-Bulgaria,884,6.0,42.0,1.0,161.0,681,35.0,127.0,6.0,26417.0,3802.0,0.0,BGR,Bulgaria<br>Active Cases 681<br>Total Deaths 42,20-Apr-2020
-Tunisia,866,0.0,37.0,0.0,43.0,786,33.0,73.0,3.0,15332.0,1297.0,0.0,TUN,Tunisia<br>Active Cases 786<br>Total Deaths 37,20-Apr-2020
-Ghana,834,0.0,9.0,0.0,99.0,726,4.0,27.0,0.3,60916.0,1960.0,0.0,GHA,Ghana<br>Active Cases 726<br>Total Deaths 9,20-Apr-2020
-Ivory Coast,801,0.0,8.0,0.0,239.0,554,0.0,30.0,0.3,0.0,0.0,0.0,CIV,Ivory Coast<br>Active Cases 554<br>Total Deaths 8,20-Apr-2020
-Cyprus,761,0.0,12.0,0.0,79.0,670,8.0,630.0,10.0,32284.0,26739.0,0.0,CYP,Cyprus<br>Active Cases 670<br>Total Deaths 12,20-Apr-2020
-Djibouti,732,0.0,2.0,0.0,76.0,654,0.0,741.0,2.0,7486.0,7577.0,0.0,DJI,Djibouti<br>Active Cases 654<br>Total Deaths 2,20-Apr-2020
-Latvia,727,15.0,5.0,0.0,88.0,634,5.0,385.0,3.0,35881.0,19023.0,0.0,LVA,Latvia<br>Active Cases 634<br>Total Deaths 5,20-Apr-2020
-Diamond Princess,712,0.0,13.0,0.0,644.0,55,7.0,0.0,0.0,0.0,0.0,0.0,Diamond Princess,Diamond Princess<br>Active Cases 55<br>Total Deaths 13,20-Apr-2020
-Andorra,704,0.0,35.0,0.0,205.0,464,17.0,9111.0,453.0,1673.0,21653.0,0.0,AND,Andorra<br>Active Cases 464<br>Total Deaths 35,20-Apr-2020
-Lebanon,673,1.0,21.0,0.0,99.0,553,27.0,99.0,3.0,20929.0,3066.0,0.0,LBN,Lebanon<br>Active Cases 553<br>Total Deaths 21,20-Apr-2020
-Costa Rica,655,0.0,4.0,0.0,97.0,554,10.0,129.0,0.8,10138.0,1990.0,0.0,CRI,Costa Rica<br>Active Cases 554<br>Total Deaths 4,20-Apr-2020
-Niger,639,0.0,19.0,0.0,113.0,507,0.0,26.0,0.8,4715.0,195.0,0.0,NER,Niger<br>Active Cases 507<br>Total Deaths 19,20-Apr-2020
-Burkina Faso,565,0.0,36.0,0.0,321.0,208,0.0,27.0,2.0,0.0,0.0,0.0,BFA,Burkina Faso<br>Active Cases 208<br>Total Deaths 36,20-Apr-2020
-Albania,562,14.0,26.0,0.0,314.0,222,5.0,195.0,9.0,5542.0,1926.0,0.0,ALB,Albania<br>Active Cases 222<br>Total Deaths 26,20-Apr-2020
-Kyrgyzstan,554,48.0,5.0,0.0,133.0,416,5.0,85.0,0.8,26147.0,4008.0,0.0,KGZ,Kyrgyzstan<br>Active Cases 416<br>Total Deaths 5,20-Apr-2020
-Nigeria,542,0.0,19.0,0.0,166.0,357,2.0,3.0,0.09,7153.0,35.0,0.0,NGA,Nigeria<br>Active Cases 357<br>Total Deaths 19,20-Apr-2020
-Bolivia,520,27.0,32.0,1.0,31.0,457,3.0,45.0,3.0,3569.0,306.0,0.0,BOL,Bolivia<br>Active Cases 457<br>Total Deaths 32,20-Apr-2020
-Guinea,518,0.0,3.0,0.0,65.0,450,0.0,39.0,0.2,0.0,0.0,0.0,GIN,Guinea<br>Active Cases 450<br>Total Deaths 3,20-Apr-2020
-Uruguay,517,0.0,9.0,0.0,298.0,210,14.0,149.0,3.0,12478.0,3592.0,0.0,URY,Uruguay<br>Active Cases 210<br>Total Deaths 9,20-Apr-2020
-Channel Islands,484,0.0,21.0,0.0,73.0,390,0.0,2784.0,121.0,3320.0,19095.0,0.0,Channel Islands,Channel Islands<br>Active Cases 390<br>Total Deaths 21,20-Apr-2020
-Honduras,472,15.0,46.0,0.0,15.0,411,10.0,48.0,5.0,2535.0,256.0,0.0,HND,Honduras<br>Active Cases 411<br>Total Deaths 46,20-Apr-2020
-San Marino,461,6.0,39.0,0.0,60.0,362,4.0,13586.0,1149.0,1711.0,50426.0,0.0,SMR,San Marino<br>Active Cases 362<br>Total Deaths 39,20-Apr-2020
-Palestine,431,13.0,2.0,0.0,71.0,358,0.0,84.0,0.4,17329.0,3397.0,0.0,PSE,Palestine<br>Active Cases 358<br>Total Deaths 2,20-Apr-2020
-Malta,427,1.0,3.0,0.0,118.0,306,2.0,967.0,7.0,23253.0,52663.0,0.0,MLT,Malta<br>Active Cases 306<br>Total Deaths 3,20-Apr-2020
-Taiwan,420,22.0,6.0,0.0,189.0,225,0.0,18.0,0.3,53005.0,2226.0,0.0,TWN,Taiwan<br>Active Cases 225<br>Total Deaths 6,20-Apr-2020
-Jordan,413,0.0,7.0,0.0,269.0,137,5.0,40.0,0.7,20500.0,2009.0,0.0,JOR,Jordan<br>Active Cases 137<br>Total Deaths 7,20-Apr-2020
-Réunion,407,0.0,0.0,0.0,237.0,170,4.0,455.0,0.0,0.0,0.0,0.0,REU,Réunion<br>Active Cases 170<br>Total Deaths 0,20-Apr-2020
-Georgia,394,6.0,4.0,0.0,86.0,304,6.0,99.0,1.0,5027.0,1260.0,0.0,GEO,Georgia<br>Active Cases 304<br>Total Deaths 4,20-Apr-2020
-Senegal,350,0.0,3.0,0.0,211.0,136,1.0,21.0,0.2,0.0,0.0,0.0,SEN,Senegal<br>Active Cases 136<br>Total Deaths 3,20-Apr-2020
-DRC,327,20.0,25.0,0.0,26.0,276,0.0,4.0,0.3,0.0,0.0,0.0,DRC,DRC<br>Active Cases 276<br>Total Deaths 25,20-Apr-2020
-Mauritius,325,0.0,9.0,0.0,180.0,136,3.0,256.0,7.0,9755.0,7670.0,0.0,MUS,Mauritius<br>Active Cases 136<br>Total Deaths 9,20-Apr-2020
-Montenegro,308,1.0,5.0,0.0,55.0,248,7.0,490.0,8.0,3874.0,6168.0,0.0,MNE,Montenegro<br>Active Cases 248<br>Total Deaths 5,20-Apr-2020
-Isle of Man,297,0.0,6.0,0.0,180.0,111,11.0,3493.0,71.0,2414.0,28389.0,0.0,IMN,Isle of Man<br>Active Cases 111<br>Total Deaths 6,20-Apr-2020
-Vietnam,268,0.0,0.0,0.0,203.0,65,8.0,3.0,0.0,206253.0,2119.0,0.0,VNM,Vietnam<br>Active Cases 65<br>Total Deaths 0,20-Apr-2020
-Kenya,262,0.0,12.0,0.0,60.0,190,2.0,5.0,0.2,10784.0,201.0,0.0,KEN,Kenya<br>Active Cases 190<br>Total Deaths 12,20-Apr-2020
-Guatemala,257,22.0,7.0,0.0,21.0,229,3.0,14.0,0.4,7200.0,402.0,0.0,GTM,Guatemala<br>Active Cases 229<br>Total Deaths 7,20-Apr-2020
-Sri Lanka,256,2.0,7.0,0.0,91.0,158,1.0,12.0,0.3,4768.0,223.0,0.0,LKA,Sri Lanka<br>Active Cases 158<br>Total Deaths 7,20-Apr-2020
-Mayotte,254,0.0,4.0,0.0,117.0,133,6.0,931.0,15.0,1800.0,6598.0,0.0,MYT,Mayotte<br>Active Cases 133<br>Total Deaths 4,20-Apr-2020
-Venezuela,227,0.0,9.0,0.0,117.0,101,4.0,8.0,0.3,299714.0,10540.0,0.0,VEN,Venezuela<br>Active Cases 101<br>Total Deaths 9,20-Apr-2020
-Mali,216,0.0,13.0,0.0,41.0,162,0.0,11.0,0.6,0.0,0.0,0.0,MLI,Mali<br>Active Cases 162<br>Total Deaths 13,20-Apr-2020
-Paraguay,206,4.0,8.0,0.0,41.0,157,1.0,29.0,1.0,4950.0,694.0,0.0,PRY,Paraguay<br>Active Cases 157<br>Total Deaths 8,20-Apr-2020
-El Salvador,201,11.0,7.0,0.0,44.0,150,1.0,31.0,1.0,11160.0,1721.0,0.0,SLV,El Salvador<br>Active Cases 150<br>Total Deaths 7,20-Apr-2020
-Faeroe Islands,185,1.0,0.0,0.0,176.0,9,0.0,3786.0,0.0,6021.0,123222.0,0.0,FRO,Faeroe Islands<br>Active Cases 9<br>Total Deaths 0,20-Apr-2020
-Jamaica,173,10.0,5.0,0.0,25.0,143,0.0,58.0,2.0,1605.0,542.0,0.0,JAM,Jamaica<br>Active Cases 143<br>Total Deaths 5,20-Apr-2020
-Martinique,163,0.0,12.0,0.0,73.0,78,11.0,434.0,32.0,0.0,0.0,0.0,MTQ,Martinique<br>Active Cases 78<br>Total Deaths 12,20-Apr-2020
-Guadeloupe,148,0.0,8.0,0.0,73.0,67,13.0,370.0,20.0,0.0,0.0,0.0,GLP,Guadeloupe<br>Active Cases 67<br>Total Deaths 8,20-Apr-2020
-Tanzania,147,0.0,5.0,0.0,11.0,131,4.0,2.0,0.08,0.0,0.0,0.0,TZA,Tanzania<br>Active Cases 131<br>Total Deaths 5,20-Apr-2020
-Rwanda,144,0.0,0.0,0.0,69.0,75,0.0,11.0,0.0,6237.0,482.0,0.0,RWA,Rwanda<br>Active Cases 75<br>Total Deaths 0,20-Apr-2020
-Congo,143,0.0,6.0,0.0,11.0,126,0.0,26.0,1.0,0.0,0.0,0.0,COG,Congo<br>Active Cases 126<br>Total Deaths 6,20-Apr-2020
-Brunei ,138,1.0,1.0,0.0,115.0,22,2.0,315.0,2.0,11472.0,26223.0,0.0,BRN,Brunei<br>Active Cases 22<br>Total Deaths 1,20-Apr-2020
-Somalia,135,0.0,7.0,0.0,2.0,126,2.0,8.0,0.4,0.0,0.0,0.0,SOM,Somalia<br>Active Cases 126<br>Total Deaths 7,20-Apr-2020
-Gibraltar,132,0.0,0.0,0.0,111.0,21,1.0,3918.0,0.0,1859.0,55178.0,0.0,GIB,Gibraltar<br>Active Cases 21<br>Total Deaths 0,20-Apr-2020
-Cambodia,122,0.0,0.0,0.0,105.0,17,1.0,7.0,0.0,5768.0,345.0,0.0,KHM,Cambodia<br>Active Cases 17<br>Total Deaths 0,20-Apr-2020
-Madagascar,120,0.0,0.0,0.0,35.0,85,1.0,4.0,0.0,2357.0,85.0,0.0,MDG,Madagascar<br>Active Cases 85<br>Total Deaths 0,20-Apr-2020
-Trinidad and Tobago,114,0.0,8.0,0.0,21.0,85,0.0,81.0,6.0,1320.0,943.0,0.0,TTO,Trinidad and Tobago<br>Active Cases 85<br>Total Deaths 8,20-Apr-2020
-Ethiopia,108,3.0,3.0,0.0,16.0,89,1.0,0.9,0.03,7557.0,66.0,0.0,ETH,Ethiopia<br>Active Cases 89<br>Total Deaths 3,20-Apr-2020
-Gabon,108,0.0,1.0,0.0,7.0,100,0.0,49.0,0.4,572.0,257.0,0.0,GAB,Gabon<br>Active Cases 100<br>Total Deaths 1,20-Apr-2020
-Myanmar,107,9.0,5.0,0.0,5.0,97,0.0,2.0,0.09,4152.0,76.0,0.0,MMR,Myanmar<br>Active Cases 97<br>Total Deaths 5,20-Apr-2020
-Aruba,96,0.0,2.0,0.0,44.0,50,4.0,899.0,19.0,1358.0,12719.0,0.0,ABW,Aruba<br>Active Cases 50<br>Total Deaths 2,20-Apr-2020
-French Guiana,96,0.0,0.0,0.0,64.0,32,2.0,321.0,0.0,0.0,0.0,0.0,GUF,French Guiana<br>Active Cases 32<br>Total Deaths 0,20-Apr-2020
-Monaco,94,0.0,3.0,0.0,22.0,69,3.0,2395.0,76.0,0.0,0.0,0.0,MCO,Monaco<br>Active Cases 69<br>Total Deaths 3,20-Apr-2020
-Bermuda,86,3.0,5.0,0.0,35.0,46,10.0,1381.0,80.0,638.0,10244.0,0.0,BMU,Bermuda<br>Active Cases 46<br>Total Deaths 5,20-Apr-2020
-Togo,84,0.0,5.0,0.0,49.0,30,0.0,10.0,0.6,4191.0,506.0,0.0,TGO,Togo<br>Active Cases 30<br>Total Deaths 5,20-Apr-2020
-Liechtenstein,79,0.0,1.0,0.0,55.0,23,0.0,2072.0,26.0,900.0,23605.0,0.0,LIE,Liechtenstein<br>Active Cases 23<br>Total Deaths 1,20-Apr-2020
-Equatorial Guinea,79,0.0,0.0,0.0,4.0,75,0.0,56.0,0.0,854.0,609.0,0.0,GNQ,Equatorial Guinea<br>Active Cases 75<br>Total Deaths 0,20-Apr-2020
-Liberia,76,0.0,7.0,0.0,7.0,62,0.0,15.0,1.0,0.0,0.0,0.0,LBR,Liberia<br>Active Cases 62<br>Total Deaths 7,20-Apr-2020
-Barbados,75,0.0,5.0,0.0,17.0,53,4.0,261.0,17.0,1000.0,3480.0,0.0,BRB,Barbados<br>Active Cases 53<br>Total Deaths 5,20-Apr-2020
-Sudan,66,0.0,10.0,0.0,6.0,50,0.0,2.0,0.2,0.0,0.0,0.0,SDN,Sudan<br>Active Cases 50<br>Total Deaths 10,20-Apr-2020
-Sint Maarten,64,0.0,9.0,0.0,12.0,43,6.0,1493.0,210.0,163.0,3802.0,0.0,SXM,Sint Maarten<br>Active Cases 43<br>Total Deaths 9,20-Apr-2020
-Guyana,63,0.0,6.0,0.0,9.0,48,4.0,80.0,8.0,283.0,360.0,0.0,GUY,Guyana<br>Active Cases 48<br>Total Deaths 6,20-Apr-2020
-Zambia,61,4.0,2.0,0.0,33.0,26,1.0,3.0,0.1,2191.0,119.0,0.0,ZMB,Zambia<br>Active Cases 26<br>Total Deaths 2,20-Apr-2020
-Cabo Verde,61,3.0,1.0,0.0,1.0,59,0.0,110.0,2.0,0.0,0.0,0.0,CPV,Cabo Verde<br>Active Cases 59<br>Total Deaths 1,20-Apr-2020
-Cayman Islands,61,0.0,1.0,0.0,7.0,53,3.0,928.0,15.0,702.0,10681.0,0.0,CYM,Cayman Islands<br>Active Cases 53<br>Total Deaths 1,20-Apr-2020
-Bahamas,55,0.0,9.0,0.0,10.0,36,1.0,140.0,23.0,0.0,0.0,0.0,BHS,Bahamas<br>Active Cases 36<br>Total Deaths 9,20-Apr-2020
-French Polynesia,55,0.0,0.0,0.0,2.0,53,1.0,196.0,0.0,1302.0,4635.0,0.0,PYF,French Polynesia<br>Active Cases 53<br>Total Deaths 0,20-Apr-2020
-Uganda,55,0.0,0.0,0.0,22.0,33,0.0,1.0,0.0,11101.0,243.0,0.0,UGA,Uganda<br>Active Cases 33<br>Total Deaths 0,20-Apr-2020
-Maldives,51,16.0,0.0,0.0,16.0,35,0.0,94.0,0.0,3714.0,6871.0,0.0,MDV,Maldives<br>Active Cases 35<br>Total Deaths 0,20-Apr-2020
-Libya,49,0.0,1.0,0.0,11.0,37,0.0,7.0,0.1,707.0,103.0,0.0,LBY,Libya<br>Active Cases 37<br>Total Deaths 1,20-Apr-2020
-Guinea-Bissau,46,0.0,0.0,0.0,0.0,46,0.0,23.0,0.0,1500.0,762.0,0.0,GNB,Guinea-Bissau<br>Active Cases 46<br>Total Deaths 0,20-Apr-2020
-Macao,45,0.0,0.0,0.0,16.0,29,1.0,69.0,0.0,0.0,0.0,0.0,MAC,Macao<br>Active Cases 29<br>Total Deaths 0,20-Apr-2020
-Haiti,44,0.0,3.0,0.0,0.0,41,0.0,4.0,0.3,498.0,44.0,0.0,HTI,Haiti<br>Active Cases 41<br>Total Deaths 3,20-Apr-2020
-Eritrea,39,0.0,0.0,0.0,3.0,36,0.0,11.0,0.0,0.0,0.0,0.0,ERI,Eritrea<br>Active Cases 36<br>Total Deaths 0,20-Apr-2020
-Mozambique,39,4.0,0.0,0.0,8.0,31,0.0,1.0,0.0,1037.0,33.0,0.0,MOZ,Mozambique<br>Active Cases 31<br>Total Deaths 0,20-Apr-2020
-Syria,38,0.0,2.0,0.0,5.0,31,0.0,2.0,0.1,0.0,0.0,0.0,SYR,Syria<br>Active Cases 31<br>Total Deaths 2,20-Apr-2020
-Saint Martin,37,0.0,2.0,0.0,19.0,16,5.0,957.0,52.0,0.0,0.0,0.0,MAF,Saint Martin<br>Active Cases 16<br>Total Deaths 2,20-Apr-2020
-Benin,35,0.0,1.0,0.0,18.0,16,0.0,3.0,0.08,0.0,0.0,0.0,BEN,Benin<br>Active Cases 16<br>Total Deaths 1,20-Apr-2020
-Chad,33,0.0,0.0,0.0,8.0,25,0.0,2.0,0.0,0.0,0.0,0.0,TCD,Chad<br>Active Cases 25<br>Total Deaths 0,20-Apr-2020
-Mongolia,32,1.0,0.0,0.0,7.0,25,0.0,10.0,0.0,1554.0,474.0,0.0,MNG,Mongolia<br>Active Cases 25<br>Total Deaths 0,20-Apr-2020
-Nepal,31,0.0,0.0,0.0,4.0,27,0.0,1.0,0.0,27471.0,943.0,0.0,NPL,Nepal<br>Active Cases 27<br>Total Deaths 0,20-Apr-2020
-Sierra Leone,30,0.0,0.0,0.0,0.0,30,0.0,4.0,0.0,0.0,0.0,0.0,SLE,Sierra Leone<br>Active Cases 30<br>Total Deaths 0,20-Apr-2020
-Zimbabwe,25,0.0,3.0,0.0,2.0,20,0.0,2.0,0.2,2626.0,177.0,0.0,ZWE,Zimbabwe<br>Active Cases 20<br>Total Deaths 3,20-Apr-2020
-Angola,24,0.0,2.0,0.0,6.0,16,0.0,0.7,0.06,0.0,0.0,0.0,AGO,Angola<br>Active Cases 16<br>Total Deaths 2,20-Apr-2020
-Antigua and Barbuda,23,0.0,3.0,0.0,3.0,17,1.0,235.0,31.0,73.0,745.0,0.0,ATG,Antigua and Barbuda<br>Active Cases 17<br>Total Deaths 3,20-Apr-2020
-Eswatini,22,0.0,1.0,0.0,8.0,13,0.0,19.0,0.9,714.0,615.0,0.0,SWZ,Eswatini<br>Active Cases 13<br>Total Deaths 1,20-Apr-2020
-Botswana,20,5.0,1.0,0.0,0.0,19,0.0,9.0,0.4,3602.0,1532.0,0.0,BWA,Botswana<br>Active Cases 19<br>Total Deaths 1,20-Apr-2020
-Laos,19,0.0,0.0,0.0,2.0,17,0.0,3.0,0.0,1333.0,183.0,0.0,LAO,Laos<br>Active Cases 17<br>Total Deaths 0,20-Apr-2020
-Timor-Leste,19,1.0,0.0,0.0,1.0,18,0.0,14.0,0.0,0.0,0.0,0.0,TLS,Timor-Leste<br>Active Cases 18<br>Total Deaths 0,20-Apr-2020
-Belize,18,0.0,2.0,0.0,0.0,16,1.0,45.0,5.0,651.0,1637.0,0.0,BLZ,Belize<br>Active Cases 16<br>Total Deaths 2,20-Apr-2020
-New Caledonia,18,0.0,0.0,0.0,15.0,3,1.0,63.0,0.0,3399.0,11906.0,0.0,NCL,New Caledonia<br>Active Cases 3<br>Total Deaths 0,20-Apr-2020
-Malawi,17,0.0,2.0,0.0,3.0,12,1.0,0.9,0.1,417.0,22.0,0.0,MWI,Malawi<br>Active Cases 12<br>Total Deaths 2,20-Apr-2020
-Fiji,17,0.0,0.0,0.0,0.0,17,0.0,19.0,0.0,0.0,0.0,0.0,FJI,Fiji<br>Active Cases 17<br>Total Deaths 0,20-Apr-2020
-Dominica,16,0.0,0.0,0.0,8.0,8,0.0,222.0,0.0,345.0,4793.0,0.0,DMA,Dominica<br>Active Cases 8<br>Total Deaths 0,20-Apr-2020
-Namibia,16,0.0,0.0,0.0,6.0,10,0.0,6.0,0.0,524.0,206.0,0.0,NAM,Namibia<br>Active Cases 10<br>Total Deaths 0,20-Apr-2020
-Saint Lucia,15,0.0,0.0,0.0,11.0,4,0.0,82.0,0.0,344.0,1873.0,0.0,LCA,Saint Lucia<br>Active Cases 4<br>Total Deaths 0,20-Apr-2020
-Curaçao,14,0.0,1.0,0.0,11.0,2,0.0,85.0,6.0,286.0,1743.0,0.0,CUW,Curaçao<br>Active Cases 2<br>Total Deaths 1,20-Apr-2020
-Grenada,14,0.0,0.0,0.0,6.0,8,4.0,124.0,0.0,92.0,818.0,0.0,GRD,Grenada<br>Active Cases 8<br>Total Deaths 0,20-Apr-2020
-Saint Kitts and Nevis,14,0.0,0.0,0.0,0.0,14,0.0,263.0,0.0,234.0,4399.0,0.0,KNA,Saint Kitts and Nevis<br>Active Cases 14<br>Total Deaths 0,20-Apr-2020
-CAR,12,0.0,0.0,0.0,4.0,8,0.0,2.0,0.0,0.0,0.0,0.0,CAR,CAR<br>Active Cases 8<br>Total Deaths 0,20-Apr-2020
-St. Vincent Grenadines,12,0.0,0.0,0.0,1.0,11,0.0,108.0,0.0,87.0,784.0,0.0,VCT,St. Vincent Grenadines<br>Active Cases 11<br>Total Deaths 0,20-Apr-2020
-Turks and Caicos,11,0.0,1.0,0.0,0.0,10,0.0,284.0,26.0,83.0,2144.0,0.0,TCA,Turks and Caicos<br>Active Cases 10<br>Total Deaths 1,20-Apr-2020
-Falkland Islands,11,0.0,0.0,0.0,3.0,8,0.0,3161.0,0.0,319.0,91667.0,0.0,FLK,Falkland Islands<br>Active Cases 8<br>Total Deaths 0,20-Apr-2020
-Greenland,11,0.0,0.0,0.0,11.0,0,0.0,194.0,0.0,1043.0,18372.0,0.0,GRL,Greenland<br>Active Cases 0<br>Total Deaths 0,20-Apr-2020
-Montserrat,11,0.0,0.0,0.0,2.0,9,1.0,2204.0,0.0,36.0,7212.0,0.0,MSR,Montserrat<br>Active Cases 9<br>Total Deaths 0,20-Apr-2020
-Seychelles,11,0.0,0.0,0.0,5.0,6,0.0,112.0,0.0,0.0,0.0,0.0,SYC,Seychelles<br>Active Cases 6<br>Total Deaths 0,20-Apr-2020
-Suriname,10,0.0,1.0,0.0,6.0,3,0.0,17.0,2.0,0.0,0.0,0.0,SUR,Suriname<br>Active Cases 3<br>Total Deaths 1,20-Apr-2020
-MS Zaandam,9,0.0,2.0,0.0,0.0,7,0.0,0.0,0.0,0.0,0.0,0.0,MS Zaandam,MS Zaandam<br>Active Cases 7<br>Total Deaths 2,20-Apr-2020
-Nicaragua,9,0.0,2.0,0.0,6.0,1,0.0,1.0,0.3,0.0,0.0,0.0,NIC,Nicaragua<br>Active Cases 1<br>Total Deaths 2,20-Apr-2020
-Gambia,9,0.0,1.0,0.0,2.0,6,0.0,4.0,0.4,316.0,131.0,0.0,GMB,Gambia<br>Active Cases 6<br>Total Deaths 1,20-Apr-2020
-Vatican City,8,0.0,0.0,0.0,2.0,6,0.0,9988.0,0.0,0.0,0.0,0.0,VAT,Vatican City<br>Active Cases 6<br>Total Deaths 0,20-Apr-2020
-Mauritania,7,0.0,1.0,0.0,6.0,0,0.0,2.0,0.2,913.0,196.0,0.0,MRT,Mauritania<br>Active Cases 0<br>Total Deaths 1,20-Apr-2020
-Papua New Guinea,7,0.0,0.0,0.0,0.0,7,0.0,0.8,0.0,167.0,19.0,0.0,PNG,Papua New Guinea<br>Active Cases 7<br>Total Deaths 0,20-Apr-2020
-St. Barth,6,0.0,0.0,0.0,5.0,1,0.0,607.0,0.0,0.0,0.0,0.0,BLM,St. Barth<br>Active Cases 1<br>Total Deaths 0,20-Apr-2020
-Western Sahara,6,0.0,0.0,0.0,0.0,6,0.0,10.0,0.0,0.0,0.0,0.0,ESH,Western Sahara<br>Active Cases 6<br>Total Deaths 0,20-Apr-2020
-Burundi,5,0.0,1.0,0.0,0.0,4,0.0,0.4,0.08,80.0,7.0,0.0,BDI,Burundi<br>Active Cases 4<br>Total Deaths 1,20-Apr-2020
-Bhutan,5,0.0,0.0,0.0,2.0,3,0.0,6.0,0.0,8107.0,10507.0,0.0,BTN,Bhutan<br>Active Cases 3<br>Total Deaths 0,20-Apr-2020
-Caribbean Netherlands,5,2.0,0.0,0.0,0.0,5,0.0,191.0,0.0,110.0,4195.0,0.0,BES,Caribbean Netherlands<br>Active Cases 5<br>Total Deaths 0,20-Apr-2020
-British Virgin Islands,4,0.0,1.0,1.0,2.0,1,0.0,132.0,33.0,0.0,0.0,0.0,VGB,British Virgin Islands<br>Active Cases 1<br>Total Deaths 1,20-Apr-2020
-Sao Tome and Principe,4,0.0,0.0,0.0,0.0,4,0.0,18.0,0.0,19.0,87.0,0.0,STP,Sao Tome and Principe<br>Active Cases 4<br>Total Deaths 0,20-Apr-2020
-South Sudan,4,0.0,0.0,0.0,0.0,4,0.0,0.4,0.0,0.0,0.0,0.0,SSD,South Sudan<br>Active Cases 4<br>Total Deaths 0,20-Apr-2020
-Anguilla,3,0.0,0.0,0.0,1.0,2,0.0,200.0,0.0,0.0,0.0,0.0,AIA,Anguilla<br>Active Cases 2<br>Total Deaths 0,20-Apr-2020
-Saint Pierre Miquelon,1,0.0,0.0,0.0,0.0,1,0.0,173.0,0.0,0.0,0.0,0.0,SPM,Saint Pierre Miquelon<br>Active Cases 1<br>Total Deaths 0,20-Apr-2020
-Yemen,1,0.0,0.0,0.0,0.0,1,0.0,0.03,0.0,0.0,0.0,0.0,YEM,Yemen<br>Active Cases 1<br>Total Deaths 0,20-Apr-2020
-China,82735,16.0,4632.0,0.0,77062.0,1041,85.0,57.0,3.0,0.0,0.0,0.0,CHN,China<br>Active Cases 1041<br>Total Deaths 4632,20-Apr-2020
-Total:,792285,879.0,41647.0,110.0,83378.0,667260,14660.0,0.0,0.0,0.0,0.0,0.0,Total:,Total:<br>Active Cases 667260<br>Total Deaths 41647,20-Apr-2020
+",721,0.0,15.0,0.0,644.0,62,7.0,0.0,,20-Apr-2020
+World,2350062,19296.0,161270.0,1223.0,606139.0,1582653,55141.0,0.0,World,20-Apr-2020
+USA,738923,131.0,39015.0,1.0,68285.0,631623,13551.0,3722209.0,USA,20-Apr-2020
+Spain,195944,1528.0,20453.0,410.0,77357.0,98134,7371.0,930230.0,ESP,20-Apr-2020
+Italy,175925,0.0,23227.0,0.0,44927.0,107771,2733.0,1305833.0,ITA,20-Apr-2020
+France,151793,0.0,19323.0,0.0,35983.0,96487,5833.0,463662.0,FRA,20-Apr-2020
+Germany,143779,55.0,4543.0,5.0,88000.0,51236,2922.0,1728357.0,DEU,20-Apr-2020
+UK,114217,0.0,15464.0,0.0,0.0,98409,1559.0,460437.0,GBR,20-Apr-2020
+Turkey,82329,0.0,1890.0,0.0,10453.0,69986,1894.0,598933.0,TUR,20-Apr-2020
+Iran,82211,1343.0,5118.0,87.0,57023.0,20070,3456.0,341662.0,IRN,20-Apr-2020
+Russia,42853,6060.0,361.0,48.0,3291.0,39201,8.0,1940000.0,RUS,20-Apr-2020
+Belgium,38496,1313.0,5683.0,230.0,8757.0,24056,1081.0,153778.0,BEL,20-Apr-2020
+Brazil,36925,203.0,2372.0,11.0,14026.0,20527,6634.0,62985.0,BRA,20-Apr-2020
+Canada,33383,0.0,1470.0,0.0,11207.0,20706,557.0,516216.0,CAN,20-Apr-2020
+Netherlands,32655,1066.0,3684.0,83.0,250.0,28721,1279.0,154911.0,NLD,20-Apr-2020
+Switzerland,27740,336.0,1368.0,0.0,17100.0,9272,386.0,221263.0,CHE,20-Apr-2020
+Portugal,20206,521.0,714.0,27.0,610.0,18882,224.0,235878.0,PRT,20-Apr-2020
+India,16365,0.0,521.0,0.0,2466.0,13378,0.0,372123.0,IND,20-Apr-2020
+Ireland,14758,0.0,571.0,0.0,77.0,14110,294.0,90646.0,IRL,20-Apr-2020
+Austria,14689,18.0,443.0,0.0,10501.0,3745,204.0,179243.0,AUT,20-Apr-2020
+Peru,14420,0.0,348.0,0.0,6684.0,7388,117.0,135895.0,PER,20-Apr-2020
+Sweden,14385,563.0,1540.0,29.0,550.0,12295,1054.0,74600.0,SWE,20-Apr-2020
+Israel,13362,97.0,171.0,7.0,3564.0,9627,156.0,187250.0,ISR,20-Apr-2020
+S. Korea,10661,8.0,234.0,2.0,8042.0,2385,55.0,559109.0,KOR,20-Apr-2020
+Japan,10296,0.0,222.0,0.0,1069.0,9005,221.0,111325.0,JPN,20-Apr-2020
+Chile,9730,0.0,126.0,0.0,4035.0,5569,360.0,108891.0,CHL,20-Apr-2020
+Poland,9082,340.0,350.0,3.0,1040.0,7692,160.0,204246.0,POL,20-Apr-2020
+Ecuador,9022,0.0,456.0,0.0,1008.0,7558,168.0,30922.0,ECU,20-Apr-2020
+Romania,8746,328.0,434.0,13.0,1892.0,6420,256.0,93611.0,ROU,20-Apr-2020
+Saudi Arabia,8274,0.0,92.0,0.0,1329.0,6853,78.0,150000.0,SAU,20-Apr-2020
+Pakistan,7993,355.0,159.0,16.0,1868.0,5966,46.0,98522.0,PAK,20-Apr-2020
+Mexico,7497,622.0,650.0,104.0,2627.0,4220,207.0,49167.0,MEX,20-Apr-2020
+Denmark,7384,142.0,355.0,9.0,4141.0,2888,76.0,94277.0,DNK,20-Apr-2020
+Norway,7069,33.0,165.0,1.0,32.0,6872,58.0,139668.0,NOR,20-Apr-2020
+UAE,6781,479.0,41.0,4.0,1286.0,5454,1.0,767000.0,ARE,20-Apr-2020
+Czechia,6657,51.0,181.0,0.0,1235.0,5241,84.0,168096.0,CZE,20-Apr-2020
+Australia,6606,20.0,70.0,0.0,4230.0,2306,48.0,420996.0,AUS,20-Apr-2020
+Singapore,6588,596.0,11.0,0.0,740.0,5837,23.0,94796.0,SGP,20-Apr-2020
+Indonesia,6575,327.0,582.0,47.0,686.0,5307,0.0,42219.0,IDN,20-Apr-2020
+Philippines,6259,172.0,409.0,12.0,572.0,5278,1.0,59928.0,PHL,20-Apr-2020
+Serbia,5994,0.0,117.0,0.0,637.0,5240,126.0,36028.0,SRB,20-Apr-2020
+Ukraine,5449,343.0,141.0,8.0,347.0,4961,45.0,57111.0,UKR,20-Apr-2020
+Qatar,5448,440.0,8.0,0.0,518.0,4922,37.0,62538.0,QAT,20-Apr-2020
+Malaysia,5389,84.0,89.0,1.0,3197.0,2103,46.0,103892.0,MYS,20-Apr-2020
+Belarus,4779,0.0,45.0,0.0,342.0,4392,65.0,86813.0,BLR,20-Apr-2020
+Dominican Republic,4335,0.0,217.0,0.0,312.0,3806,146.0,14373.0,DOM,20-Apr-2020
+Panama,4273,63.0,120.0,4.0,140.0,4013,96.0,19091.0,PAN,20-Apr-2020
+Finland,3783,102.0,94.0,4.0,1700.0,1989,68.0,57300.0,FIN,20-Apr-2020
+Colombia,3621,0.0,166.0,0.0,691.0,2764,98.0,59002.0,COL,20-Apr-2020
+Luxembourg,3537,0.0,72.0,0.0,601.0,2864,32.0,33252.0,LUX,20-Apr-2020
+South Africa,3034,0.0,52.0,0.0,903.0,2079,36.0,108021.0,ZAF,20-Apr-2020
+Egypt,3032,0.0,224.0,0.0,701.0,2107,0.0,55000.0,EGY,20-Apr-2020
+Argentina,2839,0.0,132.0,0.0,685.0,2022,127.0,30942.0,ARG,20-Apr-2020
+Morocco,2820,135.0,138.0,1.0,322.0,2360,1.0,14189.0,MAR,20-Apr-2020
+Thailand,2765,32.0,47.0,0.0,1928.0,790,61.0,100498.0,THA,20-Apr-2020
+Algeria,2534,0.0,367.0,0.0,894.0,1273,60.0,6500.0,DZA,20-Apr-2020
+Bangladesh,2456,312.0,91.0,7.0,75.0,2290,1.0,23941.0,BGD,20-Apr-2020
+Moldova,2351,0.0,62.0,5.0,457.0,1832,80.0,9848.0,MDA,20-Apr-2020
+Greece,2235,0.0,110.0,0.0,269.0,1856,67.0,53290.0,GRC,20-Apr-2020
+Hungary,1916,82.0,189.0,17.0,250.0,1477,61.0,46353.0,HUN,20-Apr-2020
+Kuwait,1915,164.0,7.0,1.0,305.0,1603,38.0,0.0,KWT,20-Apr-2020
+Croatia,1871,39.0,47.0,8.0,709.0,1115,23.0,24186.0,HRV,20-Apr-2020
+Bahrain,1773,0.0,7.0,0.0,755.0,1011,3.0,82568.0,BHR,20-Apr-2020
+Iceland,1760,0.0,9.0,0.0,1291.0,460,3.0,41091.0,ISL,20-Apr-2020
+Kazakhstan,1676,61.0,17.0,0.0,400.0,1259,22.0,100878.0,KAZ,20-Apr-2020
+Estonia,1528,16.0,40.0,2.0,164.0,1324,10.0,40333.0,EST,20-Apr-2020
+Iraq,1513,0.0,82.0,0.0,953.0,478,0.0,53955.0,IRQ,20-Apr-2020
+Uzbekistan,1495,5.0,5.0,0.0,225.0,1265,8.0,136000.0,UZB,20-Apr-2020
+New Zealand,1431,9.0,12.0,1.0,912.0,507,18.0,83224.0,NZL,20-Apr-2020
+Azerbaijan,1373,0.0,18.0,0.0,590.0,765,21.0,86607.0,AZE,20-Apr-2020
+Slovenia,1330,13.0,74.0,4.0,192.0,1064,26.0,41265.0,SVN,20-Apr-2020
+Lithuania,1298,59.0,35.0,2.0,242.0,1021,14.0,64035.0,LTU,20-Apr-2020
+Armenia,1291,43.0,20.0,0.0,545.0,726,30.0,12680.0,ARM,20-Apr-2020
+Bosnia and Herzegovina,1285,17.0,48.0,1.0,347.0,890,4.0,17818.0,BIH,20-Apr-2020
+Oman,1266,86.0,6.0,0.0,233.0,1027,3.0,0.0,OMN,20-Apr-2020
+North Macedonia,1207,37.0,51.0,2.0,179.0,977,15.0,11870.0,MKD,20-Apr-2020
+Slovakia,1161,72.0,12.0,1.0,229.0,920,10.0,44276.0,SVK,20-Apr-2020
+Hong Kong,1026,2.0,4.0,0.0,602.0,420,8.0,131786.0,HKG,20-Apr-2020
+Cameroon,1017,0.0,42.0,0.0,305.0,670,33.0,0.0,CMR,20-Apr-2020
+Afghanistan,993,60.0,32.0,2.0,131.0,830,0.0,0.0,AFG,20-Apr-2020
+Cuba,986,0.0,32.0,0.0,227.0,727,15.0,25309.0,CUB,20-Apr-2020
+Bulgaria,884,6.0,42.0,1.0,161.0,681,35.0,26417.0,BGR,20-Apr-2020
+Tunisia,866,0.0,37.0,0.0,43.0,786,33.0,15332.0,TUN,20-Apr-2020
+Ghana,834,0.0,9.0,0.0,99.0,726,4.0,60916.0,GHA,20-Apr-2020
+Ivory Coast,801,0.0,8.0,0.0,239.0,554,0.0,0.0,CIV,20-Apr-2020
+Cyprus,761,0.0,12.0,0.0,79.0,670,8.0,32284.0,CYP,20-Apr-2020
+Djibouti,732,0.0,2.0,0.0,76.0,654,0.0,7486.0,DJI,20-Apr-2020
+Latvia,727,15.0,5.0,0.0,88.0,634,5.0,35881.0,LVA,20-Apr-2020
+Diamond Princess,712,0.0,13.0,0.0,644.0,55,7.0,0.0,Diamond Princess,20-Apr-2020
+Andorra,704,0.0,35.0,0.0,205.0,464,17.0,1673.0,AND,20-Apr-2020
+Lebanon,673,1.0,21.0,0.0,99.0,553,27.0,20929.0,LBN,20-Apr-2020
+Costa Rica,655,0.0,4.0,0.0,97.0,554,10.0,10138.0,CRI,20-Apr-2020
+Niger,639,0.0,19.0,0.0,113.0,507,0.0,4715.0,NER,20-Apr-2020
+Burkina Faso,565,0.0,36.0,0.0,321.0,208,0.0,0.0,BFA,20-Apr-2020
+Albania,562,14.0,26.0,0.0,314.0,222,5.0,5542.0,ALB,20-Apr-2020
+Kyrgyzstan,554,48.0,5.0,0.0,133.0,416,5.0,26147.0,KGZ,20-Apr-2020
+Nigeria,542,0.0,19.0,0.0,166.0,357,2.0,7153.0,NGA,20-Apr-2020
+Bolivia,520,27.0,32.0,1.0,31.0,457,3.0,3569.0,BOL,20-Apr-2020
+Guinea,518,0.0,3.0,0.0,65.0,450,0.0,0.0,GIN,20-Apr-2020
+Uruguay,517,0.0,9.0,0.0,298.0,210,14.0,12478.0,URY,20-Apr-2020
+Channel Islands,484,0.0,21.0,0.0,73.0,390,0.0,3320.0,Channel Islands,20-Apr-2020
+Honduras,472,15.0,46.0,0.0,15.0,411,10.0,2535.0,HND,20-Apr-2020
+San Marino,461,6.0,39.0,0.0,60.0,362,4.0,1711.0,SMR,20-Apr-2020
+Palestine,431,13.0,2.0,0.0,71.0,358,0.0,17329.0,PSE,20-Apr-2020
+Malta,427,1.0,3.0,0.0,118.0,306,2.0,23253.0,MLT,20-Apr-2020
+Taiwan,420,22.0,6.0,0.0,189.0,225,0.0,53005.0,TWN,20-Apr-2020
+Jordan,413,0.0,7.0,0.0,269.0,137,5.0,20500.0,JOR,20-Apr-2020
+Réunion,407,0.0,0.0,0.0,237.0,170,4.0,0.0,REU,20-Apr-2020
+Georgia,394,6.0,4.0,0.0,86.0,304,6.0,5027.0,GEO,20-Apr-2020
+Senegal,350,0.0,3.0,0.0,211.0,136,1.0,0.0,SEN,20-Apr-2020
+DRC,327,20.0,25.0,0.0,26.0,276,0.0,0.0,DRC,20-Apr-2020
+Mauritius,325,0.0,9.0,0.0,180.0,136,3.0,9755.0,MUS,20-Apr-2020
+Montenegro,308,1.0,5.0,0.0,55.0,248,7.0,3874.0,MNE,20-Apr-2020
+Isle of Man,297,0.0,6.0,0.0,180.0,111,11.0,2414.0,IMN,20-Apr-2020
+Vietnam,268,0.0,0.0,0.0,203.0,65,8.0,206253.0,VNM,20-Apr-2020
+Kenya,262,0.0,12.0,0.0,60.0,190,2.0,10784.0,KEN,20-Apr-2020
+Guatemala,257,22.0,7.0,0.0,21.0,229,3.0,7200.0,GTM,20-Apr-2020
+Sri Lanka,256,2.0,7.0,0.0,91.0,158,1.0,4768.0,LKA,20-Apr-2020
+Mayotte,254,0.0,4.0,0.0,117.0,133,6.0,1800.0,MYT,20-Apr-2020
+Venezuela,227,0.0,9.0,0.0,117.0,101,4.0,299714.0,VEN,20-Apr-2020
+Mali,216,0.0,13.0,0.0,41.0,162,0.0,0.0,MLI,20-Apr-2020
+Paraguay,206,4.0,8.0,0.0,41.0,157,1.0,4950.0,PRY,20-Apr-2020
+El Salvador,201,11.0,7.0,0.0,44.0,150,1.0,11160.0,SLV,20-Apr-2020
+Faeroe Islands,185,1.0,0.0,0.0,176.0,9,0.0,6021.0,FRO,20-Apr-2020
+Jamaica,173,10.0,5.0,0.0,25.0,143,0.0,1605.0,JAM,20-Apr-2020
+Martinique,163,0.0,12.0,0.0,73.0,78,11.0,0.0,MTQ,20-Apr-2020
+Guadeloupe,148,0.0,8.0,0.0,73.0,67,13.0,0.0,GLP,20-Apr-2020
+Tanzania,147,0.0,5.0,0.0,11.0,131,4.0,0.0,TZA,20-Apr-2020
+Rwanda,144,0.0,0.0,0.0,69.0,75,0.0,6237.0,RWA,20-Apr-2020
+Congo,143,0.0,6.0,0.0,11.0,126,0.0,0.0,COG,20-Apr-2020
+Brunei ,138,1.0,1.0,0.0,115.0,22,2.0,11472.0,BRN,20-Apr-2020
+Somalia,135,0.0,7.0,0.0,2.0,126,2.0,0.0,SOM,20-Apr-2020
+Gibraltar,132,0.0,0.0,0.0,111.0,21,1.0,1859.0,GIB,20-Apr-2020
+Cambodia,122,0.0,0.0,0.0,105.0,17,1.0,5768.0,KHM,20-Apr-2020
+Madagascar,120,0.0,0.0,0.0,35.0,85,1.0,2357.0,MDG,20-Apr-2020
+Trinidad and Tobago,114,0.0,8.0,0.0,21.0,85,0.0,1320.0,TTO,20-Apr-2020
+Ethiopia,108,3.0,3.0,0.0,16.0,89,1.0,7557.0,ETH,20-Apr-2020
+Gabon,108,0.0,1.0,0.0,7.0,100,0.0,572.0,GAB,20-Apr-2020
+Myanmar,107,9.0,5.0,0.0,5.0,97,0.0,4152.0,MMR,20-Apr-2020
+Aruba,96,0.0,2.0,0.0,44.0,50,4.0,1358.0,ABW,20-Apr-2020
+French Guiana,96,0.0,0.0,0.0,64.0,32,2.0,0.0,GUF,20-Apr-2020
+Monaco,94,0.0,3.0,0.0,22.0,69,3.0,0.0,MCO,20-Apr-2020
+Bermuda,86,3.0,5.0,0.0,35.0,46,10.0,638.0,BMU,20-Apr-2020
+Togo,84,0.0,5.0,0.0,49.0,30,0.0,4191.0,TGO,20-Apr-2020
+Liechtenstein,79,0.0,1.0,0.0,55.0,23,0.0,900.0,LIE,20-Apr-2020
+Equatorial Guinea,79,0.0,0.0,0.0,4.0,75,0.0,854.0,GNQ,20-Apr-2020
+Liberia,76,0.0,7.0,0.0,7.0,62,0.0,0.0,LBR,20-Apr-2020
+Barbados,75,0.0,5.0,0.0,17.0,53,4.0,1000.0,BRB,20-Apr-2020
+Sudan,66,0.0,10.0,0.0,6.0,50,0.0,0.0,SDN,20-Apr-2020
+Sint Maarten,64,0.0,9.0,0.0,12.0,43,6.0,163.0,SXM,20-Apr-2020
+Guyana,63,0.0,6.0,0.0,9.0,48,4.0,283.0,GUY,20-Apr-2020
+Zambia,61,4.0,2.0,0.0,33.0,26,1.0,2191.0,ZMB,20-Apr-2020
+Cabo Verde,61,3.0,1.0,0.0,1.0,59,0.0,0.0,CPV,20-Apr-2020
+Cayman Islands,61,0.0,1.0,0.0,7.0,53,3.0,702.0,CYM,20-Apr-2020
+Bahamas,55,0.0,9.0,0.0,10.0,36,1.0,0.0,BHS,20-Apr-2020
+French Polynesia,55,0.0,0.0,0.0,2.0,53,1.0,1302.0,PYF,20-Apr-2020
+Uganda,55,0.0,0.0,0.0,22.0,33,0.0,11101.0,UGA,20-Apr-2020
+Maldives,51,16.0,0.0,0.0,16.0,35,0.0,3714.0,MDV,20-Apr-2020
+Libya,49,0.0,1.0,0.0,11.0,37,0.0,707.0,LBY,20-Apr-2020
+Guinea-Bissau,46,0.0,0.0,0.0,0.0,46,0.0,1500.0,GNB,20-Apr-2020
+Macao,45,0.0,0.0,0.0,16.0,29,1.0,0.0,MAC,20-Apr-2020
+Haiti,44,0.0,3.0,0.0,0.0,41,0.0,498.0,HTI,20-Apr-2020
+Eritrea,39,0.0,0.0,0.0,3.0,36,0.0,0.0,ERI,20-Apr-2020
+Mozambique,39,4.0,0.0,0.0,8.0,31,0.0,1037.0,MOZ,20-Apr-2020
+Syria,38,0.0,2.0,0.0,5.0,31,0.0,0.0,SYR,20-Apr-2020
+Saint Martin,37,0.0,2.0,0.0,19.0,16,5.0,0.0,MAF,20-Apr-2020
+Benin,35,0.0,1.0,0.0,18.0,16,0.0,0.0,BEN,20-Apr-2020
+Chad,33,0.0,0.0,0.0,8.0,25,0.0,0.0,TCD,20-Apr-2020
+Mongolia,32,1.0,0.0,0.0,7.0,25,0.0,1554.0,MNG,20-Apr-2020
+Nepal,31,0.0,0.0,0.0,4.0,27,0.0,27471.0,NPL,20-Apr-2020
+Sierra Leone,30,0.0,0.0,0.0,0.0,30,0.0,0.0,SLE,20-Apr-2020
+Zimbabwe,25,0.0,3.0,0.0,2.0,20,0.0,2626.0,ZWE,20-Apr-2020
+Angola,24,0.0,2.0,0.0,6.0,16,0.0,0.0,AGO,20-Apr-2020
+Antigua and Barbuda,23,0.0,3.0,0.0,3.0,17,1.0,73.0,ATG,20-Apr-2020
+Eswatini,22,0.0,1.0,0.0,8.0,13,0.0,714.0,SWZ,20-Apr-2020
+Botswana,20,5.0,1.0,0.0,0.0,19,0.0,3602.0,BWA,20-Apr-2020
+Laos,19,0.0,0.0,0.0,2.0,17,0.0,1333.0,LAO,20-Apr-2020
+Timor-Leste,19,1.0,0.0,0.0,1.0,18,0.0,0.0,TLS,20-Apr-2020
+Belize,18,0.0,2.0,0.0,0.0,16,1.0,651.0,BLZ,20-Apr-2020
+New Caledonia,18,0.0,0.0,0.0,15.0,3,1.0,3399.0,NCL,20-Apr-2020
+Malawi,17,0.0,2.0,0.0,3.0,12,1.0,417.0,MWI,20-Apr-2020
+Fiji,17,0.0,0.0,0.0,0.0,17,0.0,0.0,FJI,20-Apr-2020
+Dominica,16,0.0,0.0,0.0,8.0,8,0.0,345.0,DMA,20-Apr-2020
+Namibia,16,0.0,0.0,0.0,6.0,10,0.0,524.0,NAM,20-Apr-2020
+Saint Lucia,15,0.0,0.0,0.0,11.0,4,0.0,344.0,LCA,20-Apr-2020
+Curaçao,14,0.0,1.0,0.0,11.0,2,0.0,286.0,CUW,20-Apr-2020
+Grenada,14,0.0,0.0,0.0,6.0,8,4.0,92.0,GRD,20-Apr-2020
+Saint Kitts and Nevis,14,0.0,0.0,0.0,0.0,14,0.0,234.0,KNA,20-Apr-2020
+CAR,12,0.0,0.0,0.0,4.0,8,0.0,0.0,CAR,20-Apr-2020
+St. Vincent Grenadines,12,0.0,0.0,0.0,1.0,11,0.0,87.0,VCT,20-Apr-2020
+Turks and Caicos,11,0.0,1.0,0.0,0.0,10,0.0,83.0,TCA,20-Apr-2020
+Falkland Islands,11,0.0,0.0,0.0,3.0,8,0.0,319.0,FLK,20-Apr-2020
+Greenland,11,0.0,0.0,0.0,11.0,0,0.0,1043.0,GRL,20-Apr-2020
+Montserrat,11,0.0,0.0,0.0,2.0,9,1.0,36.0,MSR,20-Apr-2020
+Seychelles,11,0.0,0.0,0.0,5.0,6,0.0,0.0,SYC,20-Apr-2020
+Suriname,10,0.0,1.0,0.0,6.0,3,0.0,0.0,SUR,20-Apr-2020
+MS Zaandam,9,0.0,2.0,0.0,0.0,7,0.0,0.0,MS Zaandam,20-Apr-2020
+Nicaragua,9,0.0,2.0,0.0,6.0,1,0.0,0.0,NIC,20-Apr-2020
+Gambia,9,0.0,1.0,0.0,2.0,6,0.0,316.0,GMB,20-Apr-2020
+Vatican City,8,0.0,0.0,0.0,2.0,6,0.0,0.0,VAT,20-Apr-2020
+Mauritania,7,0.0,1.0,0.0,6.0,0,0.0,913.0,MRT,20-Apr-2020
+Papua New Guinea,7,0.0,0.0,0.0,0.0,7,0.0,167.0,PNG,20-Apr-2020
+St. Barth,6,0.0,0.0,0.0,5.0,1,0.0,0.0,BLM,20-Apr-2020
+Western Sahara,6,0.0,0.0,0.0,0.0,6,0.0,0.0,ESH,20-Apr-2020
+Burundi,5,0.0,1.0,0.0,0.0,4,0.0,80.0,BDI,20-Apr-2020
+Bhutan,5,0.0,0.0,0.0,2.0,3,0.0,8107.0,BTN,20-Apr-2020
+Caribbean Netherlands,5,2.0,0.0,0.0,0.0,5,0.0,110.0,BES,20-Apr-2020
+British Virgin Islands,4,0.0,1.0,1.0,2.0,1,0.0,0.0,VGB,20-Apr-2020
+Sao Tome and Principe,4,0.0,0.0,0.0,0.0,4,0.0,19.0,STP,20-Apr-2020
+South Sudan,4,0.0,0.0,0.0,0.0,4,0.0,0.0,SSD,20-Apr-2020
+Anguilla,3,0.0,0.0,0.0,1.0,2,0.0,0.0,AIA,20-Apr-2020
+Saint Pierre Miquelon,1,0.0,0.0,0.0,0.0,1,0.0,0.0,SPM,20-Apr-2020
+Yemen,1,0.0,0.0,0.0,0.0,1,0.0,0.0,YEM,20-Apr-2020
+China,82735,16.0,4632.0,0.0,77062.0,1041,85.0,0.0,CHN,20-Apr-2020
+Total:,792285,879.0,41647.0,110.0,83378.0,667260,14660.0,0.0,Total:,20-Apr-2020

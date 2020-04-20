@@ -8,7 +8,7 @@ from django_plotly_dash import DjangoDash
 
 app = DjangoDash('table_chart')
 
-df = pd.read_csv('corona.csv')
+df = pd.read_csv('corona_old.csv')
 
 PAGE_SIZE = 5
 
