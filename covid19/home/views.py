@@ -22,6 +22,7 @@ def home(request):
     # Funnel chart
     new_cases = funnel()
     co_map = maps()
+    monthly_cases = cases_per_month()
     return render(request, 'home/welcome.html', locals())
 
 
@@ -41,7 +42,33 @@ def maps():
 
 def funnel():
     fig1 = px.funnel_area(names=df['Country'],
-                          values=df['NewCases'],
+                          values=df['TotalDeaths'],
                           )
     new_cases = pyo.plot(fig1, auto_open=False, output_type='div')
     return new_cases
+
+
+def cases_per_month():
+    df = pd.read_csv('report_2020-04-08.csv')
+    month = df['date']
+    confirm_cases = df['new_confirmed_cases']
+    recover = df['new_recoveries']
+    deaths = df['new_deaths']
+    recover = df['new_recoveries']
+
+    fig = go.Figure()
+    # Create and style traces
+    fig.add_trace(go.Scatter(x=month, y=confirm_cases, name='Confirm cases',
+                             line=dict(color='firebrick', width=4, dash='dot')))
+    fig.add_trace(go.Scatter(x=month, y=recover, name='Recovered cases',
+                             line=dict(color='green', width=4, dash='dot')))
+    fig.add_trace(go.Scatter(x=month, y=deaths, name='Deaths ',
+                             line=dict(color='red', width=4, dash='dot')))
+
+    # Edit the layout
+    fig.update_layout(title='Number of Covid-19 Cases per month',
+                      xaxis_title='Month',
+                      yaxis_title='Covid-19 Cases')
+
+    month_cases = pyo.plot(fig, auto_open=False, output_type='div')
+    return month_cases
