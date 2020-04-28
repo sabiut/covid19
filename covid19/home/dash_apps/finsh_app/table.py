@@ -8,7 +8,7 @@ from django_plotly_dash import DjangoDash
 
 app = DjangoDash('table_chart')
 
-df = pd.read_csv('corona_old.csv')
+df = pd.read_csv('corona.csv')
 
 PAGE_SIZE = 5
 
@@ -129,7 +129,8 @@ def update_graph(rows):
                             "x": dff["Country"],
                             "y": dff[column] if column in dff else [],
                             "type": "bar",
-                            "marker": {"color": 'green'},
+                            "marker": {"color": 'orange'},
+
                         }
                     ],
                     "layout": {
@@ -137,6 +138,7 @@ def update_graph(rows):
                         "yaxis": {'automargin': True},
                         'title': {'text': column},
                         "height": 250,
+
 
                         "margin": {"t": 30, "l": 10, "r": 10},
                     },

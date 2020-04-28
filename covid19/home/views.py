@@ -1,3 +1,5 @@
+import os
+import requests
 from django.shortcuts import render
 import plotly.express as px
 import plotly.graph_objs as go
@@ -6,6 +8,8 @@ import plotly.offline as pyo
 import datetime
 
 df = pd.read_csv('corona.csv', skiprows=[1, 2, 3, 4, 5, 6, 7, 8, 221])
+url = '/home/sabiut/Documents/2020/COMPX532-20A/fnal_pro/covid19'
+filename = 'corona.csv'
 
 
 def home(request):
@@ -90,3 +94,18 @@ def show_table(request):
 
     shows_table = pyo.plot(fig, auto_open=False, output_type='div')
     return render(request, 'home/table.html', locals())
+
+
+def download_file():
+    if not os.path.isfile(filename):
+        print('Downloading File')
+        response = requests.get(url)
+        # Check if the response is ok (200)
+        if response.status_code == 200:
+            # Open file and write the content
+            with open(filename, 'wb') as file:
+                # A chunk of 128 bytes
+                for chunk in response:
+                    file.write(chunk)
+    else:
+        print('File exists')
