@@ -129,7 +129,7 @@ def update_graph(rows):
                             "x": dff["Country"],
                             "y": dff[column] if column in dff else [],
                             "type": "bar",
-                            "marker": {"color": 'orange'},
+                            "marker": {"color": 'green'},
 
                         }
                     ],
