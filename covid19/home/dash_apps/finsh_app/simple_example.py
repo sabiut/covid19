@@ -5,7 +5,7 @@ import plotly.graph_objs as go
 import pandas as pd
 from django_plotly_dash import DjangoDash
 
-df = pd.read_csv("corona_old.csv"
+df = pd.read_csv("corona.csv"
                  )
 mgr_options = df["Country"].unique()
 

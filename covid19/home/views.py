@@ -1,3 +1,7 @@
+from __future__ import print_function
+from ipywidgets import interact, interactive, fixed, interact_manual
+from IPython.core.display import display, HTML
+
 import os
 import requests
 from django.shortcuts import render
@@ -7,43 +11,75 @@ import pandas as pd
 import plotly.offline as pyo
 import datetime
 import folium
+import numpy as np
 
-df = pd.read_csv('corona.csv', skiprows=[1, 2, 3, 4, 5, 6, 7, 8, 221])
-url = '/home/sabiut/Documents/2020/COMPX532-20A/fnal_pro/covid19'
-filename = 'corona.csv'
+df = pd.read_csv('corona.csv', skiprows=[1, 2, 3, 4, 5, 6, 7,8])
+# Data from John hopkins University
+df_country = pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/web-data/data/cases_country.csv')
+df_recovered = pd.read_csv(
+    'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv')
+df_death = pd.read_csv(
+    'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv')
+df_confirmed_case = pd.read_csv(
+    'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv')
+
+# clean data
+df_country.columns = map(str.lower, df_country.columns)
+df_recovered.columns = map(str.lower, df_recovered.columns)
+df_death.columns = map(str.lower, df_death.columns)
+df_confirmed_case.columns = map(str.lower, df_confirmed_case.columns)
+
+# rename headers
+df_recovered = df_recovered.rename(columns={'province/state': 'state', 'country/region': 'country'})
+df_death = df_death.rename(columns={'province/state': 'state', 'country/region': 'country'})
+df_confirmed_case = df_confirmed_case.rename(columns={'province/state': 'state', 'country/region': 'country'})
+df_country = df_country.rename(columns={'country_region': 'country'})
 
 
 def home(request):
-    labels = df['Country']
-    values = df['TotalCases']
+    labels = df_country['country']
+    values = df_country['active']
     data = [go.Pie(labels=labels,
-                   text=["Date:" + df['date'][0]],
                    values=values,
                    textinfo='percent+label')]
     fig = go.Figure(data=data)
+
     pie_chart = pyo.plot(fig, auto_open=False, output_type='div')
     date = datetime.datetime.today().strftime('%d-%b-%Y')
 
     # Funnel chart
     new_cases = funnel()
-    co_map = maps()
-    monthly_cases = cases_per_month()
+    co_map = covid_map()
+    # monthly_cases = cases_per_month()
+    monthly_cases = line_graph('world')
     my_map = test1()
     return render(request, 'home/welcome.html', locals())
 
 
-def maps():
-    fig = px.scatter_geo(df, locations="iso_alpha",
-                         projection="natural earth",
-                         color="Country",
-                         hover_name="Country",
-                         text="TotalCases",
-                         size="NewCases",
-                         labels="TotalRecovered",
-                         color_continuous_scale=px.colors.diverging.Portland,
-                         height=500)
-    co_map = pyo.plot(fig, auto_open=False, output_type='div')
-    return co_map
+def covid_map():
+    global_map = folium.Map(location=[1, 0], zoom_start=1, max_zoom=6, min_zoom=0.500)
+
+    for cases in range(0, len(df_confirmed_case)):
+        folium.Circle(
+            location=[df_confirmed_case.iloc[cases]['lat'], df_confirmed_case.iloc[cases]['long']],
+            fill=True,
+            radius=(int((np.log(df_confirmed_case.iloc[cases, -1] + 1.00001))) + 0.2) * 50000,
+            color='red',
+            fill_color='indigo',
+            tooltip="<div style='margin: 0; background-color: Green; color: orange;'>" +
+                    "<h4 style='text-align:center;font-weight: bold'>" + df_confirmed_case.iloc[cases][
+                        'country'] + "</h4>"
+                                     "<hr style='margin:10px;color: white;'>" +
+                    "<ul style='color: white;;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'>" +
+                    "<li>Confirmed: " + str(df_confirmed_case.iloc[cases, -1]) + "</li>" +
+                    "<li>Deaths:   " + str(df_death.iloc[cases, -1]) + "</li>" +
+                    "<li>Death Rate: " + str(
+                np.round(df_death.iloc[cases, -1] / (df_confirmed_case.iloc[cases, -1] + 1.00001) * 100, 2)) + "</li>" +
+                    "</ul></div>",
+        ).add_to(global_map)
+
+    global_map = global_map._repr_html_()
+    return global_map
 
 
 def funnel():
@@ -54,37 +90,70 @@ def funnel():
     return new_cases
 
 
-def cases_per_month():
-    df = pd.read_csv('report_2020-04-08.csv')
-    month = df['date']
-    confirm_cases = df['new_confirmed_cases']
-    recover = df['new_recoveries']
-    deaths = df['new_deaths']
-    recover = df['new_recoveries']
+# def cases_per_month():
+#     df = pd.read_csv('report_2020-04-08.csv')
+#     month = df['date']
+#     confirm_cases = df['new_confirmed_cases']
+#     recover = df['new_recoveries']
+#     deaths = df['new_deaths']
+#     recover = df['new_recoveries']
+#
+#     fig = go.Figure()
+#     # Create and style traces
+#     fig.add_trace(go.Scatter(x=month, y=confirm_cases, name='Confirm cases',
+#                              line=dict(color='firebrick', width=4, dash='dot')))
+#     fig.add_trace(go.Scatter(x=month, y=recover, name='Recovered cases',
+#                              line=dict(color='green', width=4, dash="dot")))
+#     fig.add_trace(go.Scatter(x=month, y=deaths, name='Deaths ',
+#                              line=dict(color='red', width=4, dash='dot')))
+#
+#     # Edit the layout
+#     fig.update_layout(title='Number of Covid-19 Cases per month',
+#                       xaxis_title='Month',
+#                       yaxis_title='Covid-19 Cases')
+#
+#     month_cases = pyo.plot(fig, auto_open=False, output_type='div')
+#     return month_cases
+
+
+def line_graph(country):
+    labels = ['confirmed', 'deaths', 'recovered']
+    colors = ['blue', 'red', 'green']
+    line_size = [1, 1, 1]
+
+    df_list = [df_confirmed_case, df_death, df_recovered]
 
     fig = go.Figure()
-    # Create and style traces
-    fig.add_trace(go.Scatter(x=month, y=confirm_cases, name='Confirm cases',
-                             line=dict(color='firebrick', width=4, dash='dot')))
-    fig.add_trace(go.Scatter(x=month, y=recover, name='Recovered cases',
-                             line=dict(color='green', width=4, dash="dot")))
-    fig.add_trace(go.Scatter(x=month, y=deaths, name='Deaths ',
-                             line=dict(color='red', width=4, dash='dot')))
 
-    # Edit the layout
-    fig.update_layout(title='Number of Covid-19 Cases per month',
-                      xaxis_title='Month',
-                      yaxis_title='Covid-19 Cases')
+    for i, df in enumerate(df_list):
+        country = 'world'
+        x_data = np.array(list(df.iloc[:, 20:].columns))
+        y_data = np.sum(np.asarray(df.iloc[:, 6:]), axis=0)
+        fig.add_trace(go.Scatter(x=x_data, y=y_data, mode='lines+markers',
+                                 name=labels[i],
+                                 line=dict(color=colors[i], width=line_size[i]),
+                                 connectgaps=True,
+                                 text="Total " + str(labels[i]) + ": " + str(y_data[-1])
+                                 ))
+        fig.update_layout(
+            title=country + " " + "COVID-19 Cases",
+            xaxis_title='Date',
+            yaxis_title='No. of Confirmed Cases',
+            margin=dict(l=20, r=20, t=40, b=20),
+            paper_bgcolor="lightgrey",
+            width=800,
 
-    month_cases = pyo.plot(fig, auto_open=False, output_type='div')
-    return month_cases
+        )
+    fig.update_yaxes(type="linear")
+    test_plot = pyo.plot(fig, auto_open=False, output_type='div')
+    return test_plot
 
 
 def show_table(request):
     layout = go.Layout(title='Covid-19 Cases per Day',
                        )
     fig = go.Figure(layout=layout, data=[go.Table(
-        header=dict(values=list(df.columns),
+        header=dict(values=list(df_country.columns),
                     fill_color='paleturquoise',
                     align='left'),
         cells=dict(values=[df.Country, df.TotalCases, df.NewCases, df.TotalDeaths, df.NewDeaths,

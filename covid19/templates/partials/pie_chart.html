@@ -1,16 +1,15 @@
 <div class="post-preview">
 
             <h4 class="post-title">
-              <i class="fas fa-chart-pie"></i> Pie Chart Showing the information about Covid-19 Cases.
+              <i class="fas fa-chart-pie"></i> Pie Chart Showing the information about Covid-19 Active cases.
             </h4>
-
 
                  {{ pie_chart | safe}}
 
           <br>
-          <p class="post-meta"> Automatically
-            <a href="#">Updated Daily</a>
-            on {{date}}
-         <br> Click on the country to add or remove country from the pie chart</p>
+          <p class="post-meta">Updated
+            <a href="#">Daily</a> :{% now "jS F Y" %}
+              <p id="date"></p>
+          </p>
         </div>
 

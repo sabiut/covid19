@@ -8,7 +8,23 @@ from django_plotly_dash import DjangoDash
 
 app = DjangoDash('table_chart')
 
-df = pd.read_csv('corona.csv')
+# df = pd.read_csv('corona.csv')
+df_country = pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/web-data/data/cases_country.csv')
+df_recovered = pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv')
+df_death = pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv')
+df_confirmed_case = pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv')
+
+# clean data
+df_country.columns = map(str.lower, df_country.columns)
+df_recovered.columns = map(str.lower, df_recovered.columns)
+df_death.columns = map(str.lower, df_death.columns)
+df_confirmed_case.columns = map(str.lower, df_confirmed_case.columns)
+
+# rename headers
+df_recovered = df_recovered.rename(columns={'province/state': 'state', 'country/region': 'country'})
+df_death = df_death.rename(columns={'province/state': 'state', 'country/region': 'country'})
+df_confirmed_case = df_confirmed_case.rename(columns={'province/state': 'state', 'country/region': 'country'})
+df_country = df_country.rename(columns={'country_region': 'country'})
 
 PAGE_SIZE = 5
 
@@ -19,7 +35,7 @@ app.layout = html.Div(
             dash_table.DataTable(
                 id='table-paging-with-graph',
                 columns=[
-                    {"name": i, "id": i} for i in sorted(df.columns)
+                    {"name": i, "id": i} for i in sorted(df_country.columns)
                 ],
                 page_current=0,
                 page_size=20,
@@ -82,10 +98,9 @@ def split_filter_part(filter_part):
      Input('table-paging-with-graph', "page_size"),
      Input('table-paging-with-graph', "sort_by"),
      Input('table-paging-with-graph', "filter_query")])
-
 def update_table(page_current, page_size, sort_by, filter):
     filtering_expressions = filter.split(' && ')
-    dff = df
+    dff = df_country
     for filter_part in filtering_expressions:
         col_name, operator, filter_value = split_filter_part(filter_part)
 
@@ -95,9 +110,7 @@ def update_table(page_current, page_size, sort_by, filter):
         elif operator == 'contains':
             dff = dff.loc[dff[col_name].str.contains(filter_value)]
         elif operator == 'datestartswith':
-            # this is a simplification of the front-end filtering logic,
-            # only works with complete fields in standard format
-            dff = dff.loc[dff[col_name].str.startswith(filter_value)]
+              dff = dff.loc[dff[col_name].str.startswith(filter_value)]
 
     if len(sort_by):
         dff = dff.sort_values(
@@ -126,7 +139,7 @@ def update_graph(rows):
                 figure={
                     "data": [
                         {
-                            "x": dff["Country"],
+                            "x": dff["country"],
                             "y": dff[column] if column in dff else [],
                             "type": "bar",
                             "marker": {"color": 'green'},
@@ -139,11 +152,10 @@ def update_graph(rows):
                         'title': {'text': column},
                         "height": 250,
 
-
                         "margin": {"t": 30, "l": 10, "r": 10},
                     },
                 },
             )
-            for column in ["TotalCases", "NewCases", "TotalRecovered"]
+            for column in ["confirmed", "deaths", "recovered"]
         ]
     )

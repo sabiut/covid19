@@ -1,9 +1,10 @@
      <div class="post-preview">
             <h4 class="post-subtitle">
-              <i class="fas fa-globe-americas"></i> Covid-19 Cases Filter by Country
+              <i class="fas fa-globe-americas"></i> Global Covid-19 Cases
             </h4>
             {{ co_map | safe}}
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on July 8, 2019</p>
+          <p class="post-meta">Updated
+            <a href="#">Daily</a> :{% now "jS F Y" %}
+              <p id="date"></p>
+          </p>
         </div>
