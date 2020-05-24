@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'django_plotly_dash.apps.DjangoPlotlyDashConfig',
     'channels',
-    'channels_redis'
+    'channels_redis',
+    'about'
 ]
 
 MIDDLEWARE = [

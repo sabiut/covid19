@@ -1,6 +1,6 @@
 from . import views
 from django.urls import path
-from .dash_apps.finsh_app import simple_example, table, raw_table
+from .dash_apps.finsh_app import simple_example, table, raw_table, bubble_chart
 
 urlpatterns = [
     path(r'', views.home, name='home'),

@@ -39,16 +39,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="{% url 'home'%}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="{%url 'about'%}">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="post.html">Sample Post</a>
+            <a class="nav-link" href="{%url 'description'%}">Description</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="{% url 'contact'%}">Contact</a>
           </li>
         </ul>
       </div>
@@ -72,20 +72,20 @@
 
 
 <!--test-->
-<div class="container-fluid">
-    <!-- Control the column width, and how they should appear on different devices -->
-    <div class="row">
-      <div class="col-sm-4" ></div>
-      <div class="col-sm-4" > <i class="fas fa-file-excel"> Excel File</i> | <i class="fas fa-file-csv"> CSV File</i> | <a href="{% url 'show_table'%}"><i class="fas fa-link">
-         Table</a></i>
-      </div>
+<!--<div class="container-fluid">-->
+<!--    &lt;!&ndash; Control the column width, and how they should appear on different devices &ndash;&gt;-->
+<!--    <div class="row">-->
+<!--      <div class="col-sm-4" ></div>-->
+<!--      <div class="col-sm-4" > <i class="fas fa-file-excel"> Excel File</i> | <i class="fas fa-file-csv"> CSV File</i> | <a href="{% url 'show_table'%}"><i class="fas fa-link">-->
+<!--         Table</a></i>-->
+<!--      </div>-->
 
-      <div class="col-sm-4"><i class=""></i> </div>
-    </div>
-    <br>
-  <a href="{% url 'test'%}">test</a>
+<!--      <div class="col-sm-4"><i class=""></i> </div>-->
+<!--    </div>-->
+<!--    <br>-->
+<!--  <a href="{% url 'test'%}">test</a>-->
 
-</div>
+<!--</div>-->
 <!-- end test-->
 
 
@@ -108,10 +108,10 @@
         <!--end table -->
 
 
-<!--        <hr>-->
-<!--        &lt;!&ndash; funnel&ndash;&gt;-->
-<!--          {% include 'partials/funnel.html'%}-->
-<!--        &lt;!&ndash;end funnel &ndash;&gt;-->
+        <hr>
+        <!-- funnel-->
+          {% include 'partials/bubble.html'%}
+        <!--end funnel -->
 
 
         <hr>
@@ -119,16 +119,16 @@
         {% include 'partials/pie_chart.html'%}
         <!--end map -->
 
-        <hr>
 
 
-         <!-- Footer -->
-{% include 'partials/copy.html'%}
+
+<!--         &lt;!&ndash; Footer &ndash;&gt;-->
+<!--{% include 'partials/copy.html'%}-->
 
 
-        <hr>
+<!--        <hr>-->
 
-<!--end footer-->
+<!--&lt;!&ndash;end footer&ndash;&gt;-->
 <hr>
   <!-- Footer -->
 {% include 'partials/footer.html'%}

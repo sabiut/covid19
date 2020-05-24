@@ -13,7 +13,7 @@ import datetime
 import folium
 import numpy as np
 
-df = pd.read_csv('corona.csv', skiprows=[1, 2, 3, 4, 5, 6, 7,8])
+df = pd.read_csv('corona.csv', skiprows=[1, 2, 3, 4, 5, 6, 7, 8])
 # Data from John hopkins University
 df_country = pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/web-data/data/cases_country.csv')
 df_recovered = pd.read_csv(
@@ -48,7 +48,7 @@ def home(request):
     date = datetime.datetime.today().strftime('%d-%b-%Y')
 
     # Funnel chart
-    new_cases = funnel()
+    new_cases = bubble_chart(30)
     co_map = covid_map()
     # monthly_cases = cases_per_month()
     monthly_cases = line_graph('world')
@@ -82,13 +82,27 @@ def covid_map():
     return global_map
 
 
-def funnel():
-    fig1 = px.funnel_area(names=df['Country'],
-                          values=df['TotalDeaths'],
-                          )
-    new_cases = pyo.plot(fig1, auto_open=False, output_type='div')
+def bubble_chart(n):
+    sorted_country_df = df_country.sort_values('confirmed', ascending=False)
+    fig = px.scatter(sorted_country_df.head(n), x="country", y="confirmed", size="confirmed", color="country",
+                     hover_name="country", size_max=60)
+    fig.update_layout(
+        xaxis_title="Countries",
+        yaxis_title="Confirmed Cases",
+        width=900,
+        height=700,
+    )
+    new_cases = pyo.plot(fig, auto_open=False, output_type='div')
     return new_cases
 
+
+# def funnel():
+#     fig1 = px.funnel_area(names=df['Country'],
+#                           values=df['TotalDeaths'],
+#                           )
+#     new_cases = pyo.plot(fig1, auto_open=False, output_type='div')
+#     return new_cases
+#
 
 # def cases_per_month():
 #     df = pd.read_csv('report_2020-04-08.csv')
