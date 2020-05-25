@@ -48,7 +48,7 @@ def home(request):
     co_map = covid_map()
     monthly_cases = cases_per_month()
     daily_cases = line_graph('world')
-    my_map = test1()
+   # my_map = test1()
     return render(request, 'home/welcome.html', locals())
 
 
@@ -180,101 +180,101 @@ def show_table(request):
     return render(request, 'home/table.html', locals())
 
 
-def test1():
-    SF_COORDINATES = (-16.378575, 167.862999)
-    crimedata = pd.read_csv('stat.csv')
-
-    m = folium.Map(location=SF_COORDINATES,
-                   zoom_start=10
-                   )
-    test = crimedata[['X', 'Y']]
-    list = test.values.tolist()
-    size = len(list)
-
-    for each in range(0, size):
-        folium.Marker(list[each],
-
-                      popup="Village:" + str(crimedata['Village_Name'][each]) +
-                            "\nMale:" + str(crimedata['Male'][each]) +
-                            "\nFemale:" + str(crimedata['Female'][each]) +
-                            "\nTotal Pop:" + str(crimedata['Totpop'][each]) +
-                            "\nHH:" + str(crimedata['HH'][each]),
-                      icon=folium.Icon(color='orange')).add_to(m)
-
-    folium.Marker(
-        location=[-16.308389, 168.267770],
-        radius=50,
-        popup='S/E Number of Villages: 21 Male:791 Female:758 Population:1,549 HH:457',
-        color='#3186cc',
-        fill=True,
-        fill_color='#3186cc',
-        icon=folium.Icon(icon='cloud')
-    ).add_to(m)
-
-    folium.Marker(
-        location=[-16.239604, 167.916719],
-        popup='West Number of Villages: 34 Male:1428 Female:1389 Population:2,817 HH:642',
-        icon=folium.Icon(icon='cloud')
-    ).add_to(m)
-
-    folium.Marker(
-        location=[-16.128442, 168.160146],
-        popup='North Number of Villages: 50 Male:1459 Female:1560 Population:3,019 HH:664 ',
-        icon=folium.Icon(icon='cloud')
-    ).add_to(m)
-
-    folium.Marker(
-        location=[-16.458311, 168.235905],
-        popup='Number of Villages: 19 Male:867 Female:853 Population:1,720 HH:390',
-        icon=folium.Icon(icon='cloud')
-    ).add_to(m)
-
-    folium.Circle(
-        radius=100,
-        location=[-16.350303, 168.272950],
-        popup='Utas Polling Station',
-        fill=True,
-        opacity=8.8,
-        stroke=True,
-        weitht=1.0,
-        color='red',
-        fill_color='red'
-    ).add_to(m)
-
-    folium.Circle(
-        radius=100,
-        location=[-16.333166, 168.300781],
-        popup='Ulei Polling Station',
-        fill=True,
-        opacity=8.8,
-        stroke=True,
-        weitht=1.0,
-        color='red',
-        fill_color='red'
-
-    ).add_to(m)
-
-    folium.Circle(
-        radius=100,
-        location=[-16.357205, 168.252766],
-        popup='Moru harbour',
-        fill=True,
-        color='yellow'
-
-    ).add_to(m)
-
-    folium.Circle(
-        radius=100,
-        location=[-16.357805, 168.233938],
-        popup='Taveak harbour',
-        fill=True,
-        color='yellow'
-
-    ).add_to(m)
-    m = m._repr_html_()
-    return m
-
-
-def test(request):
-    my_map = test1()
-    return render(request, 'home/map.html', locals())
+# def test1():
+#     SF_COORDINATES = (-16.378575, 167.862999)
+#     crimedata = pd.read_csv('stat.csv')
+#
+#     m = folium.Map(location=SF_COORDINATES,
+#                    zoom_start=10
+#                    )
+#     test = crimedata[['X', 'Y']]
+#     list = test.values.tolist()
+#     size = len(list)
+#
+#     for each in range(0, size):
+#         folium.Marker(list[each],
+#
+#                       popup="Village:" + str(crimedata['Village_Name'][each]) +
+#                             "\nMale:" + str(crimedata['Male'][each]) +
+#                             "\nFemale:" + str(crimedata['Female'][each]) +
+#                             "\nTotal Pop:" + str(crimedata['Totpop'][each]) +
+#                             "\nHH:" + str(crimedata['HH'][each]),
+#                       icon=folium.Icon(color='orange')).add_to(m)
+#
+#     folium.Marker(
+#         location=[-16.308389, 168.267770],
+#         radius=50,
+#         popup='S/E Number of Villages: 21 Male:791 Female:758 Population:1,549 HH:457',
+#         color='#3186cc',
+#         fill=True,
+#         fill_color='#3186cc',
+#         icon=folium.Icon(icon='cloud')
+#     ).add_to(m)
+#
+#     folium.Marker(
+#         location=[-16.239604, 167.916719],
+#         popup='West Number of Villages: 34 Male:1428 Female:1389 Population:2,817 HH:642',
+#         icon=folium.Icon(icon='cloud')
+#     ).add_to(m)
+#
+#     folium.Marker(
+#         location=[-16.128442, 168.160146],
+#         popup='North Number of Villages: 50 Male:1459 Female:1560 Population:3,019 HH:664 ',
+#         icon=folium.Icon(icon='cloud')
+#     ).add_to(m)
+#
+#     folium.Marker(
+#         location=[-16.458311, 168.235905],
+#         popup='Number of Villages: 19 Male:867 Female:853 Population:1,720 HH:390',
+#         icon=folium.Icon(icon='cloud')
+#     ).add_to(m)
+#
+#     folium.Circle(
+#         radius=100,
+#         location=[-16.350303, 168.272950],
+#         popup='Utas Polling Station',
+#         fill=True,
+#         opacity=8.8,
+#         stroke=True,
+#         weitht=1.0,
+#         color='red',
+#         fill_color='red'
+#     ).add_to(m)
+#
+#     folium.Circle(
+#         radius=100,
+#         location=[-16.333166, 168.300781],
+#         popup='Ulei Polling Station',
+#         fill=True,
+#         opacity=8.8,
+#         stroke=True,
+#         weitht=1.0,
+#         color='red',
+#         fill_color='red'
+#
+#     ).add_to(m)
+#
+#     folium.Circle(
+#         radius=100,
+#         location=[-16.357205, 168.252766],
+#         popup='Moru harbour',
+#         fill=True,
+#         color='yellow'
+#
+#     ).add_to(m)
+#
+#     folium.Circle(
+#         radius=100,
+#         location=[-16.357805, 168.233938],
+#         popup='Taveak harbour',
+#         fill=True,
+#         color='yellow'
+#
+#     ).add_to(m)
+#     m = m._repr_html_()
+#     return m
+#
+#
+# def test(request):
+#     my_map = test1()
+#     return render(request, 'home/map.html', locals())
