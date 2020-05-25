@@ -1,6 +1,4 @@
 from __future__ import print_function
-from ipywidgets import interact, interactive, fixed, interact_manual
-from IPython.core.display import display, HTML
 
 import os
 import requests
@@ -50,8 +48,8 @@ def home(request):
     # Funnel chart
     new_cases = bubble_chart(30)
     co_map = covid_map()
-    # monthly_cases = cases_per_month()
-    monthly_cases = line_graph('world')
+    monthly_cases = cases_per_month()
+    daily_cases = line_graph('world')
     my_map = test1()
     return render(request, 'home/welcome.html', locals())
 
@@ -90,7 +88,7 @@ def bubble_chart(n):
         xaxis_title="Countries",
         yaxis_title="Confirmed Cases",
         width=900,
-        height=700,
+
     )
     new_cases = pyo.plot(fig, auto_open=False, output_type='div')
     return new_cases
@@ -104,30 +102,33 @@ def bubble_chart(n):
 #     return new_cases
 #
 
-# def cases_per_month():
-#     df = pd.read_csv('report_2020-04-08.csv')
-#     month = df['date']
-#     confirm_cases = df['new_confirmed_cases']
-#     recover = df['new_recoveries']
-#     deaths = df['new_deaths']
-#     recover = df['new_recoveries']
-#
-#     fig = go.Figure()
-#     # Create and style traces
-#     fig.add_trace(go.Scatter(x=month, y=confirm_cases, name='Confirm cases',
-#                              line=dict(color='firebrick', width=4, dash='dot')))
-#     fig.add_trace(go.Scatter(x=month, y=recover, name='Recovered cases',
-#                              line=dict(color='green', width=4, dash="dot")))
-#     fig.add_trace(go.Scatter(x=month, y=deaths, name='Deaths ',
-#                              line=dict(color='red', width=4, dash='dot')))
-#
-#     # Edit the layout
-#     fig.update_layout(title='Number of Covid-19 Cases per month',
-#                       xaxis_title='Month',
-#                       yaxis_title='Covid-19 Cases')
-#
-#     month_cases = pyo.plot(fig, auto_open=False, output_type='div')
-#     return month_cases
+def cases_per_month():
+    df = pd.read_csv('report_2020-04-08.csv')
+    month = df['date']
+    confirm_cases = df['new_confirmed_cases']
+    recover = df['new_recoveries']
+    deaths = df['new_deaths']
+    recover = df['new_recoveries']
+
+    fig = go.Figure()
+    # Create and style traces
+    fig.add_trace(go.Scatter(x=month, y=confirm_cases, name='Confirm cases',
+                             line=dict(color='firebrick', width=4, dash='dot')))
+    fig.add_trace(go.Scatter(x=month, y=recover, name='Recovered cases',
+                             line=dict(color='green', width=4, dash="dot")))
+    fig.add_trace(go.Scatter(x=month, y=deaths, name='Deaths ',
+                             line=dict(color='red', width=4, dash='dot')))
+
+    # Edit the layout
+    fig.update_layout(title='Number of Covid-19 Cases per month',
+                      xaxis_title='Month',
+                      yaxis_title='Covid-19 Cases',
+                      width=900,
+
+                      ),
+
+    month_cases = pyo.plot(fig, auto_open=False, output_type='div')
+    return month_cases
 
 
 def line_graph(country):
