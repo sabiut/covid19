@@ -101,7 +101,7 @@ def bubble_chart(n):
 #
 
 def cases_per_month():
-    df = pd.read_csv('report_2020-04-08.csv')
+    df = pd.read_csv('/home/ubuntu/project/covid19/covid19/static/report_2020-04-08.csv')
     month = df['date']
     confirm_cases = df['new_confirmed_cases']
     recover = df['new_recoveries']
