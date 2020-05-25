@@ -11,7 +11,7 @@ import datetime
 import folium
 import numpy as np
 
-df = pd.read_csv('corona.csv', skiprows=[1, 2, 3, 4, 5, 6, 7, 8])
+
 # Data from John hopkins University
 df_country = pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/web-data/data/cases_country.csv')
 df_recovered = pd.read_csv(
