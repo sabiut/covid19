@@ -10,8 +10,6 @@ import plotly.offline as pyo
 import datetime
 import folium
 import numpy as np
-
-
 # Data from John hopkins University
 df_country = pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/web-data/data/cases_country.csv')
 df_recovered = pd.read_csv(
